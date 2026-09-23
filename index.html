@@ -220,41 +220,52 @@
   .diary-index a { font-family: 'Caveat', cursive; font-size: 1.25rem; }
   .doc-index a:hover, .doc-index a:focus-visible { border-color: var(--rust); }
   .doc-index a.active { color: var(--rust); border-color: var(--rust); }
-  .diary-chips {
+
+  .diary-nav-top {
     display: flex;
-    gap: 8px;
-    overflow-x: auto;
-    padding: 4px 4px 16px;
-    margin-bottom: 22px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding-bottom: 20px;
+    margin-bottom: 34px;
     border-bottom: 1px dashed var(--parchment-shadow);
-    scrollbar-width: thin;
   }
-  .diary-chip {
-    flex: 0 0 auto;
-    padding: 7px 16px;
-    border-radius: 999px;
-    border: 1px solid var(--ink-soft);
+  .diary-nav-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     background: none;
+    border: none;
     cursor: pointer;
-    font-family: 'Caveat', cursive;
-    font-size: 1.05rem;
     color: var(--rust);
-    white-space: nowrap;
-    transition: background .2s ease, color .2s ease, border-color .2s ease;
+    padding: 6px 0;
+    max-width: 38%;
+    min-width: 0;
   }
-  .diary-chip:hover { border-color: var(--rust); }
-  .diary-chip.active { background: var(--rust); color: var(--parchment); border-color: var(--rust); }
-  .doc-nav { display: flex; align-items: center; justify-content: center; gap: 18px; margin-top: 28px; }
-  .doc-nav .counter { min-width: 90px; text-align: center; font-family: 'Cinzel', serif; font-size: 12px; letter-spacing: 0.15em; color: var(--ink-soft); }
-  .doc-nav-btn {
-    background: none; border: 1px solid var(--ink-soft); color: var(--rust);
-    width: 42px; height: 42px; border-radius: 50%;
-    cursor: pointer; display: flex; align-items: center; justify-content: center;
-    transition: background .2s ease, transform .15s ease;
+  .diary-nav-link.next { flex-direction: row-reverse; text-align: right; margin-left: auto; }
+  .diary-nav-link:disabled { opacity: 0.25; cursor: default; pointer-events: none; }
+  .diary-nav-link:hover:not(:disabled) .diary-nav-date { border-color: var(--rust); }
+  .diary-nav-arrow { font-size: 1.3rem; line-height: 1; flex: 0 0 auto; color: var(--rust); }
+  .diary-nav-label { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+  .diary-nav-link.next .diary-nav-label { align-items: flex-end; }
+  .diary-nav-caption {
+    font-family: 'Cinzel', serif; font-size: 10px; letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--ink-soft);
   }
-  .doc-nav-btn:hover { background: rgba(110,42,31,0.1); }
-  .doc-nav-btn:active { transform: scale(0.94); }
-  .doc-nav-btn svg { width: 18px; height: 18px; }
+  .diary-nav-date {
+    font-family: 'Caveat', cursive; font-size: 1.15rem;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;
+    border-bottom: 1px solid transparent; transition: border-color .2s ease;
+  }
+  .diary-nav-counter {
+    font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 0.15em;
+    color: var(--ink-soft); flex: 0 0 auto;
+  }
+  @media (max-width: 560px) {
+    .diary-nav-caption { display: none; }
+    .diary-nav-date { font-size: 1rem; }
+    .diary-nav-link { max-width: 42%; }
+  }
 
   .entry {
     padding: 26px 0 30px;
@@ -413,17 +424,24 @@
     <div class="doc-header">
       <h2>El Diario de Iván</h2>
     </div>
-    <div class="diary-chips" id="diaryChips"></div>
-    <article class="entry" id="diaryEntry"></article>
-    <div class="doc-nav">
-      <button class="doc-nav-btn" id="diaryPrev" aria-label="Previous entry">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 18l-6-6 6-6"/></svg>
+    <div class="diary-nav-top" id="diaryNavTop">
+      <button class="diary-nav-link" id="diaryPrev">
+        <span class="diary-nav-arrow">←</span>
+        <span class="diary-nav-label">
+          <span class="diary-nav-caption">Anterior</span>
+          <span class="diary-nav-date" id="diaryPrevDate"></span>
+        </span>
       </button>
-      <div class="counter" id="diaryCounter"></div>
-      <button class="doc-nav-btn" id="diaryNext" aria-label="Next entry">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 18l6-6-6-6"/></svg>
+      <div class="diary-nav-counter" id="diaryCounter"></div>
+      <button class="diary-nav-link next" id="diaryNext">
+        <span class="diary-nav-label">
+          <span class="diary-nav-caption">Siguiente</span>
+          <span class="diary-nav-date" id="diaryNextDate"></span>
+        </span>
+        <span class="diary-nav-arrow">→</span>
       </button>
     </div>
+    <article class="entry" id="diaryEntry"></article>
   </div>
 </section>
 
@@ -446,11 +464,12 @@
 
 <script>
 (function(){
-  var chipsWrap = document.getElementById('diaryChips');
   var entryEl = document.getElementById('diaryEntry');
   var counterEl = document.getElementById('diaryCounter');
   var prevBtn = document.getElementById('diaryPrev');
   var nextBtn = document.getElementById('diaryNext');
+  var prevDateEl = document.getElementById('diaryPrevDate');
+  var nextDateEl = document.getElementById('diaryNextDate');
   var entries = [];
   var current = 0;
 
@@ -470,16 +489,25 @@
       entryEl.innerHTML = '<div class="entry-text">' + textHtml + '</div>';
     }
     counterEl.textContent = (current + 1) + ' / ' + entries.length;
-    var chips = chipsWrap.querySelectorAll('.diary-chip');
-    chips.forEach(function(c, i){
-      c.classList.toggle('active', i === current);
-    });
-    if (chips[current]) {
-      chips[current].scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+
+    if (current > 0) {
+      prevBtn.disabled = false;
+      prevDateEl.textContent = entries[current - 1].index_label;
+    } else {
+      prevBtn.disabled = true;
+      prevDateEl.textContent = '';
+    }
+    if (current < entries.length - 1) {
+      nextBtn.disabled = false;
+      nextDateEl.textContent = entries[current + 1].index_label;
+    } else {
+      nextBtn.disabled = true;
+      nextDateEl.textContent = '';
     }
   }
   function go(i){
-    current = (i + entries.length) % entries.length;
+    if (i < 0 || i >= entries.length) return;
+    current = i;
     render();
   }
 
@@ -490,13 +518,6 @@
     })
     .then(function(data){
       entries = data;
-      entries.forEach(function(e, i){
-        var chip = document.createElement('button');
-        chip.className = 'diary-chip';
-        chip.textContent = e.index_label;
-        chip.addEventListener('click', function(){ go(i); });
-        chipsWrap.appendChild(chip);
-      });
       prevBtn.addEventListener('click', function(){ go(current - 1); });
       nextBtn.addEventListener('click', function(){ go(current + 1); });
       render();
