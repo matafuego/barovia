@@ -220,6 +220,30 @@
   .diary-index a { font-family: 'Caveat', cursive; font-size: 1.25rem; }
   .doc-index a:hover, .doc-index a:focus-visible { border-color: var(--rust); }
   .doc-index a.active { color: var(--rust); border-color: var(--rust); }
+  .diary-chips {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 4px 4px 16px;
+    margin-bottom: 22px;
+    border-bottom: 1px dashed var(--parchment-shadow);
+    scrollbar-width: thin;
+  }
+  .diary-chip {
+    flex: 0 0 auto;
+    padding: 7px 16px;
+    border-radius: 999px;
+    border: 1px solid var(--ink-soft);
+    background: none;
+    cursor: pointer;
+    font-family: 'Caveat', cursive;
+    font-size: 1.05rem;
+    color: var(--rust);
+    white-space: nowrap;
+    transition: background .2s ease, color .2s ease, border-color .2s ease;
+  }
+  .diary-chip:hover { border-color: var(--rust); }
+  .diary-chip.active { background: var(--rust); color: var(--parchment); border-color: var(--rust); }
   .doc-nav { display: flex; align-items: center; justify-content: center; gap: 18px; margin-top: 28px; }
   .doc-nav .counter { min-width: 90px; text-align: center; font-family: 'Cinzel', serif; font-size: 12px; letter-spacing: 0.15em; color: var(--ink-soft); }
   .doc-nav-btn {
@@ -377,23 +401,16 @@
     <div class="doc-header">
       <h2>El Diario de Iván</h2>
     </div>
-    <div class="doc-layout">
-      <aside class="doc-index diary-index" id="diaryIndex">
-        <h4>Index</h4>
-        <ul id="diaryIndexList"></ul>
-      </aside>
-      <div class="doc-entries">
-        <article class="entry" id="diaryEntry"></article>
-        <div class="doc-nav">
-          <button class="doc-nav-btn" id="diaryPrev" aria-label="Previous entry">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 18l-6-6 6-6"/></svg>
-          </button>
-          <div class="counter" id="diaryCounter"></div>
-          <button class="doc-nav-btn" id="diaryNext" aria-label="Next entry">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 18l6-6-6-6"/></svg>
-          </button>
-        </div>
-      </div>
+    <div class="diary-chips" id="diaryChips"></div>
+    <article class="entry" id="diaryEntry"></article>
+    <div class="doc-nav">
+      <button class="doc-nav-btn" id="diaryPrev" aria-label="Previous entry">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <div class="counter" id="diaryCounter"></div>
+      <button class="doc-nav-btn" id="diaryNext" aria-label="Next entry">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
     </div>
   </div>
 </section>
@@ -417,7 +434,7 @@
 
 <script>
 (function(){
-  var indexList = document.getElementById('diaryIndexList');
+  var chipsWrap = document.getElementById('diaryChips');
   var entryEl = document.getElementById('diaryEntry');
   var counterEl = document.getElementById('diaryCounter');
   var prevBtn = document.getElementById('diaryPrev');
@@ -432,14 +449,17 @@
       '<h3 class="entry-title">' + e.title + '</h3>' +
       '<p class="entry-body">' + e.body.replace(/\n\n/g, '</p><p class="entry-body">') + '</p>';
     counterEl.textContent = (current + 1) + ' / ' + entries.length;
-    indexList.querySelectorAll('a').forEach(function(a, i){
-      a.classList.toggle('active', i === current);
+    var chips = chipsWrap.querySelectorAll('.diary-chip');
+    chips.forEach(function(c, i){
+      c.classList.toggle('active', i === current);
     });
+    if (chips[current]) {
+      chips[current].scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+    }
   }
   function go(i){
     current = (i + entries.length) % entries.length;
     render();
-    entryEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
 
   fetch('diary.json')
@@ -450,13 +470,11 @@
     .then(function(data){
       entries = data;
       entries.forEach(function(e, i){
-        var li = document.createElement('li');
-        var a = document.createElement('a');
-        a.href = '#diary';
-        a.textContent = e.index_label;
-        a.addEventListener('click', function(evt){ evt.preventDefault(); go(i); });
-        li.appendChild(a);
-        indexList.appendChild(li);
+        var chip = document.createElement('button');
+        chip.className = 'diary-chip';
+        chip.textContent = e.index_label;
+        chip.addEventListener('click', function(){ go(i); });
+        chipsWrap.appendChild(chip);
       });
       prevBtn.addEventListener('click', function(){ go(current - 1); });
       nextBtn.addEventListener('click', function(){ go(current + 1); });
