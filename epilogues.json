@@ -14,21 +14,21 @@
     "name": "Iván",
     "land": false,
     "paragraphs": [
-      "Placeholder closing text for Ivan — the diarist and beast-hunter. What became of him after the gate closed."
+      "Ivan — the diarist and beast-hunter. What became of him after the gate closed."
     ]
   },
   {
     "name": "Antulio",
     "land": false,
     "paragraphs": [
-      "Placeholder closing text for Antulio — the one who wanted to turn back, and whether he ever got the chance."
+      "Antulio — the one who wanted to turn back, and whether he ever got the chance."
     ]
   },
   {
     "name": "¿Y Barovia?",
     "land": true,
     "paragraphs": [
-      "Placeholder closing text for the land itself — what remains once the travelers are gone, and what still waits at the gate."
+      "¡Barovia! Placeholder closing text for the land itself — what remains once the travelers are gone, and what still waits at the gate."
     ]
   }
 ]
