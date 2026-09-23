@@ -267,6 +267,18 @@
     color: var(--rust); margin: 0 0 8px;
   }
   .entry-title { font-family: 'Caveat', cursive; font-size: clamp(1.6rem, 3vw, 2.1rem); color: var(--ink); margin: 0 0 12px; }
+  .entry-layout { display: flex; gap: 36px; align-items: flex-start; }
+  .entry-text { flex: 1 1 auto; min-width: 0; }
+  .entry-image { flex: 0 0 260px; max-width: 260px; }
+  .entry-image img {
+    width: 100%; height: auto; display: block;
+    border: 1px solid var(--parchment-shadow);
+    box-shadow: 0 14px 30px -14px rgba(0,0,0,0.4);
+  }
+  @media (max-width: 640px) {
+    .entry-layout { flex-direction: column; }
+    .entry-image { flex: 1 1 auto; max-width: 320px; margin: 0 auto; }
+  }
   .entry-body {
     font-family: 'Caveat', cursive; font-size: clamp(1.15rem, 2vw, 1.35rem); line-height: 1.55;
     color: var(--ink); max-width: 68ch;
@@ -444,10 +456,19 @@
 
   function render(){
     var e = entries[current];
-    entryEl.innerHTML =
+    var textHtml =
       '<p class="entry-date">' + e.date + '</p>' +
       '<h3 class="entry-title">' + e.title + '</h3>' +
       '<p class="entry-body">' + e.body.replace(/\n\n/g, '</p><p class="entry-body">') + '</p>';
+    if (e.img) {
+      entryEl.innerHTML =
+        '<div class="entry-layout">' +
+          '<div class="entry-text">' + textHtml + '</div>' +
+          '<div class="entry-image"><img src="' + e.img + '" alt="' + e.title + '"></div>' +
+        '</div>';
+    } else {
+      entryEl.innerHTML = '<div class="entry-text">' + textHtml + '</div>';
+    }
     counterEl.textContent = (current + 1) + ' / ' + entries.length;
     var chips = chipsWrap.querySelectorAll('.diary-chip');
     chips.forEach(function(c, i){
