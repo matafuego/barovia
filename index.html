@@ -281,11 +281,24 @@
   .entry-layout { display: flex; gap: 36px; align-items: flex-start; }
   .entry-text { flex: 1 1 auto; min-width: 0; }
   .entry-image { flex: 0 0 260px; max-width: 260px; }
-  .entry-image img {
-    width: 100%; height: auto; display: block;
+  .entry-image a {
+    display: block; position: relative; overflow: hidden;
     border: 1px solid var(--parchment-shadow);
     box-shadow: 0 14px 30px -14px rgba(0,0,0,0.4);
   }
+  .entry-image img {
+    width: 100%; height: auto; display: block;
+  }
+  .entry-image-hint {
+    position: absolute; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    background: rgba(20,14,10,0.5);
+    opacity: 0;
+    transition: opacity .2s ease;
+  }
+  .entry-image a:hover .entry-image-hint,
+  .entry-image a:focus-visible .entry-image-hint { opacity: 1; }
+  .entry-image-hint svg { width: 30px; height: 30px; color: #f2e9d8; }
   @media (max-width: 640px) {
     .entry-layout { flex-direction: column; }
     .entry-image { flex: 1 1 auto; max-width: 320px; margin: 0 auto; }
@@ -483,7 +496,17 @@
       entryEl.innerHTML =
         '<div class="entry-layout">' +
           '<div class="entry-text">' + textHtml + '</div>' +
-          '<div class="entry-image"><img src="' + e.img + '" alt="' + e.title + '"></div>' +
+          '<div class="entry-image">' +
+            '<a href="' + e.img + '" target="_blank" rel="noopener">' +
+              '<img src="' + e.img + '" alt="' + e.title + '">' +
+              '<span class="entry-image-hint">' +
+                '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">' +
+                  '<path d="M1.5 12S5 5 12 5s10.5 7 10.5 7-3.5 7-10.5 7S1.5 12 1.5 12Z"/>' +
+                  '<circle cx="12" cy="12" r="3.2"/>' +
+                '</svg>' +
+              '</span>' +
+            '</a>' +
+          '</div>' +
         '</div>';
     } else {
       entryEl.innerHTML = '<div class="entry-text">' + textHtml + '</div>';
