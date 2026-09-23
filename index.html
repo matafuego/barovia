@@ -221,7 +221,7 @@
   .doc-index a:hover, .doc-index a:focus-visible { border-color: var(--rust); }
   .doc-index a.active { color: var(--rust); border-color: var(--rust); }
 
-  .diary-nav-top {
+  .entry-nav-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -230,7 +230,7 @@
     margin-bottom: 34px;
     border-bottom: 1px dashed var(--parchment-shadow);
   }
-  .diary-nav-link {
+  .entry-nav-link {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -242,29 +242,29 @@
     max-width: 38%;
     min-width: 0;
   }
-  .diary-nav-link.next { flex-direction: row-reverse; text-align: right; margin-left: auto; }
-  .diary-nav-link:disabled { opacity: 0.25; cursor: default; pointer-events: none; }
-  .diary-nav-link:hover:not(:disabled) .diary-nav-date { border-color: var(--rust); }
-  .diary-nav-arrow { font-size: 1.3rem; line-height: 1; flex: 0 0 auto; color: var(--rust); }
-  .diary-nav-label { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
-  .diary-nav-link.next .diary-nav-label { align-items: flex-end; }
-  .diary-nav-caption {
+  .entry-nav-link.next { flex-direction: row-reverse; text-align: right; margin-left: auto; }
+  .entry-nav-link:disabled { opacity: 0.25; cursor: default; pointer-events: none; }
+  .entry-nav-link:hover:not(:disabled) .entry-nav-date { border-color: var(--rust); }
+  .entry-nav-arrow { font-size: 1.3rem; line-height: 1; flex: 0 0 auto; color: var(--rust); }
+  .entry-nav-label { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+  .entry-nav-link.next .entry-nav-label { align-items: flex-end; }
+  .entry-nav-caption {
     font-family: 'Cinzel', serif; font-size: 10px; letter-spacing: 0.18em;
     text-transform: uppercase; color: var(--ink-soft);
   }
-  .diary-nav-date {
+  .entry-nav-date {
     font-family: 'Caveat', cursive; font-size: 1.15rem;
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;
     border-bottom: 1px solid transparent; transition: border-color .2s ease;
   }
-  .diary-nav-counter {
+  .entry-nav-counter {
     font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 0.15em;
     color: var(--ink-soft); flex: 0 0 auto;
   }
   @media (max-width: 560px) {
-    .diary-nav-caption { display: none; }
-    .diary-nav-date { font-size: 1rem; }
-    .diary-nav-link { max-width: 42%; }
+    .entry-nav-caption { display: none; }
+    .entry-nav-date { font-size: 1rem; }
+    .entry-nav-link { max-width: 42%; }
   }
 
   .entry {
@@ -309,16 +309,6 @@
   }
 
   /* bestiary variant */
-  .bestiary-entry { display: grid; grid-template-columns: 140px 1fr; gap: 22px; }
-  @media (max-width: 560px) { .bestiary-entry { grid-template-columns: 1fr; } }
-  .beast-sketch {
-    border: 1px solid var(--ink-soft);
-    background: rgba(0,0,0,0.03);
-    aspect-ratio: 1;
-    display: flex; align-items: center; justify-content: center;
-    padding: 10px;
-  }
-  .beast-sketch svg { width: 100%; height: 100%; opacity: 0.8; }
   .beast-name { font-family: 'Kalam', cursive; font-weight: 700; font-size: clamp(1.4rem, 2.5vw, 1.9rem); color: var(--rust); margin: 0 0 6px; }
   .beast-meta { font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 0.1em; color: var(--ink-soft); margin: 0 0 10px; text-transform: uppercase; }
   .beast-body { font-family: 'Kalam', cursive; font-size: clamp(1rem, 1.6vw, 1.15rem); line-height: 1.6; color: var(--ink); }
@@ -437,21 +427,21 @@
     <div class="doc-header">
       <h2>El Diario de Iván</h2>
     </div>
-    <div class="diary-nav-top" id="diaryNavTop">
-      <button class="diary-nav-link" id="diaryPrev">
-        <span class="diary-nav-arrow">←</span>
-        <span class="diary-nav-label">
-          <span class="diary-nav-caption">Anterior</span>
-          <span class="diary-nav-date" id="diaryPrevDate"></span>
+    <div class="entry-nav-top" id="diaryNavTop">
+      <button class="entry-nav-link" id="diaryPrev">
+        <span class="entry-nav-arrow">←</span>
+        <span class="entry-nav-label">
+          <span class="entry-nav-caption">Anterior</span>
+          <span class="entry-nav-date" id="diaryPrevDate"></span>
         </span>
       </button>
-      <div class="diary-nav-counter" id="diaryCounter"></div>
-      <button class="diary-nav-link next" id="diaryNext">
-        <span class="diary-nav-label">
-          <span class="diary-nav-caption">Siguiente</span>
-          <span class="diary-nav-date" id="diaryNextDate"></span>
+      <div class="entry-nav-counter" id="diaryCounter"></div>
+      <button class="entry-nav-link next" id="diaryNext">
+        <span class="entry-nav-label">
+          <span class="entry-nav-caption">Siguiente</span>
+          <span class="entry-nav-date" id="diaryNextDate"></span>
         </span>
-        <span class="diary-nav-arrow">→</span>
+        <span class="entry-nav-arrow">→</span>
       </button>
     </div>
     <article class="entry" id="diaryEntry"></article>
@@ -463,15 +453,26 @@
   <div class="wrap">
     <div class="doc-header">
       <h2>Bestiario</h2>
-      <p>Notas de campo de los monstruos que habitan estas tierras. <span class="placeholder-note">Placeholder entries below.</span></p>
+      <p>Notas de campo de los monstruos que habitan estas tierras.</p>
     </div>
-    <div class="doc-layout">
-      <aside class="doc-index" id="bestiaryIndex">
-        <h4>Index</h4>
-        <ul id="bestiaryIndexList"></ul>
-      </aside>
-      <div class="doc-entries" id="bestiaryEntries"></div>
+    <div class="entry-nav-top" id="bestiaryNavTop">
+      <button class="entry-nav-link" id="bestiaryPrev">
+        <span class="entry-nav-arrow">←</span>
+        <span class="entry-nav-label">
+          <span class="entry-nav-caption">Anterior</span>
+          <span class="entry-nav-date" id="bestiaryPrevName"></span>
+        </span>
+      </button>
+      <div class="entry-nav-counter" id="bestiaryCounter"></div>
+      <button class="entry-nav-link next" id="bestiaryNext">
+        <span class="entry-nav-label">
+          <span class="entry-nav-caption">Siguiente</span>
+          <span class="entry-nav-date" id="bestiaryNextName"></span>
+        </span>
+        <span class="entry-nav-arrow">→</span>
+      </button>
     </div>
+    <article class="entry" id="bestiaryEntry"></article>
   </div>
 </section>
 
@@ -554,38 +555,82 @@
 
 <script>
 (function(){
-  var indexList = document.getElementById('bestiaryIndexList');
-  var entriesWrap = document.getElementById('bestiaryEntries');
+  var entryEl = document.getElementById('bestiaryEntry');
+  var counterEl = document.getElementById('bestiaryCounter');
+  var prevBtn = document.getElementById('bestiaryPrev');
+  var nextBtn = document.getElementById('bestiaryNext');
+  var prevNameEl = document.getElementById('bestiaryPrevName');
+  var nextNameEl = document.getElementById('bestiaryNextName');
+  var beasts = [];
+  var current = 0;
+
+  function imageBlock(img, alt){
+    if (!img) return '';
+    return '<div class="entry-image">' +
+      '<a href="' + img + '" target="_blank" rel="noopener">' +
+        '<img src="' + img + '" alt="' + alt + '">' +
+        '<span class="entry-image-hint">' +
+          '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">' +
+            '<path d="M1.5 12S5 5 12 5s10.5 7 10.5 7-3.5 7-10.5 7S1.5 12 1.5 12Z"/>' +
+            '<circle cx="12" cy="12" r="3.2"/>' +
+          '</svg>' +
+        '</span>' +
+      '</a>' +
+    '</div>';
+  }
+
+  function render(){
+    var b = beasts[current];
+    var textHtml =
+      '<p class="beast-name">' + b.name + '</p>' +
+      '<p class="beast-meta">' + b.meta + '</p>' +
+      '<p class="beast-body">' + b.body + '</p>';
+    if (b.img) {
+      entryEl.innerHTML =
+        '<div class="entry-layout">' +
+          '<div class="entry-text">' + textHtml + '</div>' +
+          imageBlock(b.img, b.name) +
+        '</div>';
+    } else {
+      entryEl.innerHTML = '<div class="entry-text">' + textHtml + '</div>';
+    }
+    counterEl.textContent = (current + 1) + ' / ' + beasts.length;
+
+    if (current > 0) {
+      prevBtn.disabled = false;
+      prevNameEl.textContent = beasts[current - 1].name;
+    } else {
+      prevBtn.disabled = true;
+      prevNameEl.textContent = '';
+    }
+    if (current < beasts.length - 1) {
+      nextBtn.disabled = false;
+      nextNameEl.textContent = beasts[current + 1].name;
+    } else {
+      nextBtn.disabled = true;
+      nextNameEl.textContent = '';
+    }
+  }
+  function go(i){
+    if (i < 0 || i >= beasts.length) return;
+    current = i;
+    render();
+  }
 
   fetch('bestiary.json')
     .then(function(res){
       if (!res.ok) throw new Error('HTTP ' + res.status);
       return res.json();
     })
-    .then(function(beasts){
-      beasts.forEach(function(b){
-        var li = document.createElement('li');
-        li.innerHTML = '<a href="#' + b.id + '">' + b.name + '</a>';
-        indexList.appendChild(li);
-
-        var article = document.createElement('article');
-        article.className = 'entry';
-        article.id = b.id;
-        article.innerHTML =
-          '<div class="bestiary-entry">' +
-            '<div class="beast-sketch"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2">' + b.sketch + '</svg></div>' +
-            '<div>' +
-              '<p class="beast-name">' + b.name + '</p>' +
-              '<p class="beast-meta">' + b.meta + '</p>' +
-              '<p class="beast-body">' + b.body + '</p>' +
-            '</div>' +
-          '</div>';
-        entriesWrap.appendChild(article);
-      });
+    .then(function(data){
+      beasts = data;
+      prevBtn.addEventListener('click', function(){ go(current - 1); });
+      nextBtn.addEventListener('click', function(){ go(current + 1); });
+      render();
     })
     .catch(function(err){
       console.error('Could not load bestiary.json:', err);
-      entriesWrap.innerHTML = '<p>No se pudo cargar el bestiario (bestiary.json).</p>';
+      entryEl.innerHTML = '<p>No se pudo cargar el bestiario (bestiary.json).</p>';
     });
 })();
 </script>
