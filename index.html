@@ -366,31 +366,11 @@
       <h2>El Diario de Iván</h2>
     </div>
     <div class="doc-layout">
-      <aside class="doc-index diary-index">
+      <aside class="doc-index diary-index" id="diaryIndex">
         <h4>Index</h4>
-        <ul>
-          <li><a href="#d-1">16 de Sintiavr, 433</a></li>
-          <li><a href="#d-2">18 de Sintiavr, 433</a></li>
-          <li><a href="#d-3">19 de Sintiavr, ¿433?</a></li>
-        </ul>
+        <ul id="diaryIndexList"></ul>
       </aside>
-      <div class="doc-entries">
-        <article class="entry" id="d-1">
-          <p class="entry-date">16 de Sintiavr del 433</p>
-          <h3 class="entry-title">Las puertas de hierro</h3>
-          <p class="entry-body">Atravesamos las enormes puertas de hierro escoltados por las carretas Vistani. Las cabezas decapitadas que custodian el portal parecen vigilarnos. Nathaniel mantiene la vista al frente, aferrado al símbolo de St. Cuthbert; Antulio reza en silencio a Pelor. No sé en qué parte de este mundo nos encontramos, pero mi instinto me dice que hemos cruzado un límite sin retorno. El aire huele a humedad y muerte. La cacería ha comenzado.</p>
-        </article>
-        <article class="entry" id="d-2">
-          <p class="entry-date">18 de Sintiavr del 433</p>
-          <h3 class="entry-title">Los niños fantasma y Lorgot</h3>
-          <p class="entry-body">Dos espíritus de niños nos guiaron hasta una casa en la aldea de Barovia. Un culto oscuro realizaba sacrificios rituales en sus entrañas. Enfrentamos a la abominación que llamaban Lorgot y la abatimos. Al salir, el mismísimo Strahd von Zarovich hizo acto de presencia exigiendo que nos arrodilláramos. Nathaniel y yo nos resistimos, pero Antulio quedó bajo su hechizo. Papá tenía razón en sus notas: este vampiro no es un simple monstruo, es el dueño absoluto de este infierno.</p>
-        </article>
-        <article class="entry" id="d-3">
-          <p class="entry-date">19 de Sintiavr del ¿433?</p>
-          <h3 class="entry-title">La Sangre de la Viña</h3>
-          <p class="entry-body">Llegamos a la taberna la Sangre de la Viña y conocimos a Ismark. Su padre, el burgomaestre, ha muerto tras los constantes ataques de las criaturas de Strahd. Ayudamos a enterrarlo junto a su hermana Ireena. En el sótano de la iglesia local tuvimos que acabar con Doru, el hijo del sacerdote, convertido en engendro vampírico. Ver a ese padre llorar a su hijo monstruoso me hizo pensar en ti, papá. ¿Cuántas veces nos habrás visto así?</p>
-        </article>
-      </div>
+      <div class="doc-entries" id="diaryEntries"></div>
     </div>
   </div>
 </section>
@@ -403,131 +383,137 @@
       <p>Notas de campo de los monstruos que habitan estas tierras. <span class="placeholder-note">Placeholder entries below.</span></p>
     </div>
     <div class="doc-layout">
-      <aside class="doc-index">
+      <aside class="doc-index" id="bestiaryIndex">
         <h4>Index</h4>
-        <ul>
-          <li><a href="#b-barghest">Barghest</a></li>
-          <li><a href="#b-nightshade">Nightshade Wraith</a></li>
-          <li><a href="#b-hound">Vistani Hound</a></li>
-          <li><a href="#b-wolf">Wolf of the Mist</a></li>
-        </ul>
+        <ul id="bestiaryIndexList"></ul>
       </aside>
-      <div class="doc-entries">
-        <article class="entry" id="b-barghest">
-          <div class="bestiary-entry">
-            <div class="beast-sketch">
-              <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M20 75 Q30 40 50 35 Q70 40 80 75" />
-                <circle cx="40" cy="50" r="3" fill="currentColor" stroke="none"/>
-                <circle cx="60" cy="50" r="3" fill="currentColor" stroke="none"/>
-                <path d="M30 78 L25 90 M45 80 L42 92 M55 80 L58 92 M70 78 L75 90"/>
-              </svg>
-            </div>
-            <div>
-              <p class="beast-name">Barghest</p>
-              <p class="beast-meta">Danger — High · Nocturnal</p>
-              <p class="beast-body">Sketch and notes to replace. Describe where it was encountered, its behavior, and what — if anything — drives it off.</p>
-            </div>
-          </div>
-        </article>
-        <article class="entry" id="b-nightshade">
-          <div class="bestiary-entry">
-            <div class="beast-sketch">
-              <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M50 15 Q25 40 30 70 Q50 90 70 70 Q75 40 50 15 Z"/>
-                <path d="M40 45 L44 50 M60 45 L56 50" stroke-width="2.4"/>
-              </svg>
-            </div>
-            <div>
-              <p class="beast-name">Nightshade Wraith</p>
-              <p class="beast-meta">Danger — Severe · Bound to fog</p>
-              <p class="beast-body">Placeholder notes. Add first-hand account of an encounter and any lore gathered from villagers.</p>
-            </div>
-          </div>
-        </article>
-        <article class="entry" id="b-hound">
-          <div class="bestiary-entry">
-            <div class="beast-sketch">
-              <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M15 65 Q25 45 45 45 L55 35 L65 45 Q85 45 85 65 Q70 80 50 78 Q30 80 15 65 Z"/>
-              </svg>
-            </div>
-            <div>
-              <p class="beast-name">Vistani Hound</p>
-              <p class="beast-meta">Danger — Moderate · Pack hunter</p>
-              <p class="beast-body">Placeholder notes on temperament, tracking habits, and whether it can be reasoned with — or bribed.</p>
-            </div>
-          </div>
-        </article>
-        <article class="entry" id="b-wolf">
-          <div class="bestiary-entry">
-            <div class="beast-sketch">
-              <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M18 70 L30 40 L45 55 L55 55 L70 40 L82 70 Q50 85 18 70 Z"/>
-                <circle cx="38" cy="52" r="2.5" fill="currentColor" stroke="none"/>
-                <circle cx="62" cy="52" r="2.5" fill="currentColor" stroke="none"/>
-              </svg>
-            </div>
-            <div>
-              <p class="beast-name">Wolf of the Mist</p>
-              <p class="beast-meta">Danger — High · Pack hunter</p>
-              <p class="beast-body">Placeholder notes. Describe the mist-wolves' connection to the castle and how to tell one from an ordinary wolf, if it can be told at all.</p>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ EPILOGUE ============ -->
-<section id="epilogue">
-  <div class="wrap">
-    <h2 class="epi-title">Epílogo</h2>
-    <div class="epi-tabs" id="epiTabs">
-      <button class="epi-tab active" data-epi="0">Nathaniel</button>
-      <button class="epi-tab" data-epi="1">Iván</button>
-      <button class="epi-tab" data-epi="2">Antulio</button>
-      <button class="epi-tab" data-epi="3">¿Y Barovia?</button>
-    </div>
-    <div class="epi-panels">
-      <div class="tablet active">
-        <h3>Nathaniel</h3>
-        <p>Dicen que los cuervos nunca olvidan un rostro. El mío ha cambiado con los años y la hostilidad de los elementos.</p>
-        <p style="margin-top:14px;">Ahora vivo en soledad. Las pesadillas y las visiones me visitan a diario, yo les doy la bienvenida y las acepto. Sé que algo murió dentro de mí el día en que acabamos con la maldición. Desde entonces, mi vida ha sido simple. Luego de despedir a mis hermanos —de sangre y de batalla—, decidí emprender un largo viaje por Barovia. Escondí cuidadosamente mis armas en puntos secretos de esta hermosa tierra. Supe muy temprano que había nacido para morir allí y que, por voluntad de los dioses, no lo haría en batalla.</p>
-        <p style="margin-top:14px;">Lo agradezco.</p>
-        <p style="margin-top:14px;">Paso los días en una caverna del monte Baratok. Cuando sale el sol, me siento a observar cómo la escarcha se convierte en agua y gotea desde las ramas. Hombres desesperados acuden a mí, esperando que los ayude con sus dolencias. Cuando los dioses me lo permiten, los sano y rechazo sus ofrendas.</p>
-        <p style="margin-top:14px;">Un viejo cuervo me visita de vez en cuando. Le comparto mi pan y lo saludo con alegría.</p>
-      </div>
-      <div class="tablet">
-        <h3>Iván</h3>
-        <p>Placeholder closing text for Ivan — the diarist and beast-hunter. What became of him after the gate closed.</p>
-      </div>
-      <div class="tablet">
-        <h3>Antulio</h3>
-        <p>Placeholder closing text for Antulio — the one who wanted to turn back, and whether he ever got the chance.</p>
-      </div>
-      <div class="tablet land">
-        <h3>¿Y Barovia?</h3>
-        <p>Placeholder closing text for the land itself — what remains once the travelers are gone, and what still waits at the gate.</p>
-      </div>
+      <div class="doc-entries" id="bestiaryEntries"></div>
     </div>
   </div>
 </section>
 
 <script>
 (function(){
-  var tabs = document.querySelectorAll('#epiTabs .epi-tab');
-  var panels = document.querySelectorAll('.epi-panels .tablet');
-  tabs.forEach(function(tab){
-    tab.addEventListener('click', function(){
-      var idx = parseInt(tab.getAttribute('data-epi'), 10);
-      tabs.forEach(function(t){ t.classList.remove('active'); });
-      panels.forEach(function(p){ p.classList.remove('active'); });
-      tab.classList.add('active');
-      if (panels[idx]) panels[idx].classList.add('active');
+  var indexList = document.getElementById('diaryIndexList');
+  var entriesWrap = document.getElementById('diaryEntries');
+
+  fetch('diary.json')
+    .then(function(res){
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      return res.json();
+    })
+    .then(function(entries){
+      entries.forEach(function(e){
+        var li = document.createElement('li');
+        li.innerHTML = '<a href="#' + e.id + '">' + e.index_label + '</a>';
+        indexList.appendChild(li);
+
+        var article = document.createElement('article');
+        article.className = 'entry';
+        article.id = e.id;
+        article.innerHTML =
+          '<p class="entry-date">' + e.date + '</p>' +
+          '<h3 class="entry-title">' + e.title + '</h3>' +
+          '<p class="entry-body">' + e.body + '</p>';
+        entriesWrap.appendChild(article);
+      });
+    })
+    .catch(function(err){
+      console.error('Could not load diary.json:', err);
+      entriesWrap.innerHTML = '<p>No se pudo cargar el diario (diary.json).</p>';
     });
-  });
+})();
+
+(function(){
+  var indexList = document.getElementById('bestiaryIndexList');
+  var entriesWrap = document.getElementById('bestiaryEntries');
+
+  fetch('bestiary.json')
+    .then(function(res){
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      return res.json();
+    })
+    .then(function(beasts){
+      beasts.forEach(function(b){
+        var li = document.createElement('li');
+        li.innerHTML = '<a href="#' + b.id + '">' + b.name + '</a>';
+        indexList.appendChild(li);
+
+        var article = document.createElement('article');
+        article.className = 'entry';
+        article.id = b.id;
+        article.innerHTML =
+          '<div class="bestiary-entry">' +
+            '<div class="beast-sketch"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2">' + b.sketch + '</svg></div>' +
+            '<div>' +
+              '<p class="beast-name">' + b.name + '</p>' +
+              '<p class="beast-meta">' + b.meta + '</p>' +
+              '<p class="beast-body">' + b.body + '</p>' +
+            '</div>' +
+          '</div>';
+        entriesWrap.appendChild(article);
+      });
+    })
+    .catch(function(err){
+      console.error('Could not load bestiary.json:', err);
+      entriesWrap.innerHTML = '<p>No se pudo cargar el bestiario (bestiary.json).</p>';
+    });
+})();
+</script>
+
+<!-- ============ EPILOGUE ============ -->
+<section id="epilogue">
+  <div class="wrap">
+    <h2 class="epi-title">Epílogo</h2>
+    <div class="epi-tabs" id="epiTabs"></div>
+    <div class="epi-panels" id="epiPanels"></div>
+  </div>
+</section>
+
+<script>
+(function(){
+  var tabsWrap = document.getElementById('epiTabs');
+  var panelsWrap = document.getElementById('epiPanels');
+
+  fetch('epilogues.json')
+    .then(function(res){
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      return res.json();
+    })
+    .then(function(epilogues){
+      epilogues.forEach(function(ep, i){
+        var tab = document.createElement('button');
+        tab.className = 'epi-tab' + (i === 0 ? ' active' : '');
+        tab.setAttribute('data-epi', i);
+        tab.textContent = ep.name;
+        tabsWrap.appendChild(tab);
+
+        var panel = document.createElement('div');
+        panel.className = 'tablet' + (ep.land ? ' land' : '') + (i === 0 ? ' active' : '');
+        var html = '<h3>' + ep.name + '</h3>';
+        ep.paragraphs.forEach(function(p, pi){
+          html += '<p' + (pi > 0 ? ' style="margin-top:14px;"' : '') + '>' + p + '</p>';
+        });
+        panel.innerHTML = html;
+        panelsWrap.appendChild(panel);
+      });
+
+      var tabs = tabsWrap.querySelectorAll('.epi-tab');
+      var panels = panelsWrap.querySelectorAll('.tablet');
+      tabs.forEach(function(tab){
+        tab.addEventListener('click', function(){
+          var idx = parseInt(tab.getAttribute('data-epi'), 10);
+          tabs.forEach(function(t){ t.classList.remove('active'); });
+          panels.forEach(function(p){ p.classList.remove('active'); });
+          tab.classList.add('active');
+          if (panels[idx]) panels[idx].classList.add('active');
+        });
+      });
+    })
+    .catch(function(err){
+      console.error('Could not load epilogues.json:', err);
+      panelsWrap.innerHTML = '<p style="text-align:center;color:var(--fog);">No se pudieron cargar los epílogos (epilogues.json).</p>';
+    });
 })();
 </script>
 
@@ -535,145 +521,10 @@
 
 <script>
 (function(){
+  // Slide data (images + descriptions) now lives in slides.json.
   // To add more story images: drop the file in images/story/ and add
-  // a matching entry here — title, caption, and the relative path.
-  var slides = [
-    {
-      title: "No. 1",
-      body: "Nuestros héroes conocen Barovia",
-      img: "images/story/01.png"
-    },
-    {
-      title: "No. 2",
-      body: "¿Quiénes son esos niños fantasma?",
-      img: "images/story/02.png"
-    },
-    {
-      title: "No. 3",
-      body: "¡Lothrot el pudridor!",
-      img: "images/story/03.png"
-    },
-    {
-      title: "No. 4",
-      body: "¿El hijo de Donovich es un vampiro?",
-      img: "images/story/04.png"
-    },
-    {
-      title: "No. 5",
-      body: "¿El hijo de Donovich es un vampiro?",
-      img: "images/story/05.png"
-    },
-    {
-      title: "No. 4",
-      body: "¿El hijo de Donovich es un vampiro?",
-      img: "images/story/06.png"
-    },
-    {
-      title: "No. 4",
-      body: "¿El hijo de Donovich es un vampiro?",
-      img: "images/story/07.png"
-    },
-    {
-      title: "No. 4",
-      body: "¿El hijo de Donovich es un vampiro?",
-      img: "images/story/08.png"
-    },
-    {
-      title: "No. 4",
-      body: "¿El hijo de Donovich es un vampiro?",
-      img: "images/story/09.png"
-    },
-    {
-      title: "No. 4",
-      body: "¿El hijo de Donovich es un vampiro?",
-      img: "images/story/10.png"
-    },
-    {
-      title: "No. 4",
-      body: "¿El hijo de Donovich es un vampiro?",
-      img: "images/story/11.png"
-    },
-    {
-      title: "No. 4",
-      body: "¿El hijo de Donovich es un vampiro?",
-      img: "images/story/12.png"
-    },
-    {
-      title: "No. 4",
-      body: "¿El hijo de Donovich es un vampiro?",
-      img: "images/story/13.png"
-    },
-    {
-      title: "No. 4",
-      body: "¿El hijo de Donovich es un vampiro?",
-      img: "images/story/14.png"
-    },
-    {
-      title: "No. 4",
-      body: "¿El hijo de Donovich es un vampiro?",
-      img: "images/story/15.png"
-    },
-    {
-      title: "No. 4",
-      body: "¿El hijo de Donovich es un vampiro?",
-      img: "images/story/16.png"
-    },
-    {
-      title: "No. 4",
-      body: "¿El hijo de Donovich es un vampiro?",
-      img: "images/story/17.png"
-    },
-    {
-      title: "No. 4",
-      body: "¿El hijo de Donovich es un vampiro?",
-      img: "images/story/18.png"
-    },
-    {
-      title: "No. 4",
-      body: "¿El hijo de Donovich es un vampiro?",
-      img: "images/story/19.png"
-    },
-    {
-      title: "No. 4",
-      body: "¿El hijo de Donovich es un vampiro?",
-      img: "images/story/20.png"
-    },
-    {
-      title: "No. 4",
-      body: "¿El hijo de Donovich es un vampiro?",
-      img: "images/story/21.png"
-    },
-    {
-      title: "No. 4",
-      body: "¿El hijo de Donovich es un vampiro?",
-      img: "images/story/22.png"
-    },
-    {
-      title: "No. 4",
-      body: "¿El hijo de Donovich es un vampiro?",
-      img: "images/story/23.png"
-    },
-    {
-      title: "No. 4",
-      body: "¿El hijo de Donovich es un vampiro?",
-      img: "images/story/24.png"
-    },
-    {
-      title: "No. 4",
-      body: "¿El hijo de Donovich es un vampiro?",
-      img: "images/story/25.png"
-    },
-    {
-      title: "No. 4",
-      body: "¿El hijo de Donovich es un vampiro?",
-      img: "images/story/26.png"
-    },
-    {
-      title: "No. 4",
-      body: "¿El hijo de Donovich es un vampiro?",
-      img: "images/story/27.png"
-    }
-  ];
+  // a matching entry to slides.json — title, body (description), and img path.
+  var slides = [];
 
   var frame = document.getElementById('carFrame');
   var thumbsWrap = document.getElementById('thumbs');
@@ -681,19 +532,21 @@
   var capBody = document.getElementById('capBody');
   var current = 0;
 
-  slides.forEach(function(s, i){
-    var div = document.createElement('div');
-    div.className = 'slide' + (i === 0 ? ' active' : '');
-    div.innerHTML = '<img src="' + s.img + '" alt="' + s.title + '" style="width:100%;height:100%;object-fit:contain;background:#0c0a09;">';
-    frame.insertBefore(div, frame.querySelector('.vignette'));
+  function buildSlides(){
+    slides.forEach(function(s, i){
+      var div = document.createElement('div');
+      div.className = 'slide' + (i === 0 ? ' active' : '');
+      div.innerHTML = '<img src="' + s.img + '" alt="' + s.title + '" style="width:100%;height:100%;object-fit:contain;background:#0c0a09;">';
+      frame.insertBefore(div, frame.querySelector('.vignette'));
 
-    var thumb = document.createElement('button');
-    thumb.className = 'thumb' + (i === 0 ? ' active' : '');
-    thumb.setAttribute('aria-label', 'Go to image ' + (i+1));
-    thumb.innerHTML = '<img src="' + s.img + '" alt="">';
-    thumb.addEventListener('click', function(){ go(i); });
-    thumbsWrap.appendChild(thumb);
-  });
+      var thumb = document.createElement('button');
+      thumb.className = 'thumb' + (i === 0 ? ' active' : '');
+      thumb.setAttribute('aria-label', 'Go to image ' + (i+1));
+      thumb.innerHTML = '<img src="' + s.img + '" alt="">';
+      thumb.addEventListener('click', function(){ go(i); });
+      thumbsWrap.appendChild(thumb);
+    });
+  }
 
   function render(){
     document.querySelectorAll('.slide').forEach(function(el, i){
@@ -711,25 +564,41 @@
   }
   function go(i){ current = (i + slides.length) % slides.length; render(); }
 
-  document.getElementById('prevBtn').addEventListener('click', function(){ go(current - 1); });
-  document.getElementById('nextBtn').addEventListener('click', function(){ go(current + 1); });
+  function wireControls(){
+    document.getElementById('prevBtn').addEventListener('click', function(){ go(current - 1); });
+    document.getElementById('nextBtn').addEventListener('click', function(){ go(current + 1); });
 
-  document.getElementById('storyCarousel').addEventListener('keydown', function(e){
-    if (e.key === 'ArrowLeft') go(current - 1);
-    if (e.key === 'ArrowRight') go(current + 1);
-  });
+    document.getElementById('storyCarousel').addEventListener('keydown', function(e){
+      if (e.key === 'ArrowLeft') go(current - 1);
+      if (e.key === 'ArrowRight') go(current + 1);
+    });
 
-  // basic swipe support
-  var startX = null;
-  frame.addEventListener('touchstart', function(e){ startX = e.touches[0].clientX; }, {passive:true});
-  frame.addEventListener('touchend', function(e){
-    if (startX === null) return;
-    var dx = e.changedTouches[0].clientX - startX;
-    if (Math.abs(dx) > 40) go(current + (dx < 0 ? 1 : -1));
-    startX = null;
-  }, {passive:true});
+    // basic swipe support
+    var startX = null;
+    frame.addEventListener('touchstart', function(e){ startX = e.touches[0].clientX; }, {passive:true});
+    frame.addEventListener('touchend', function(e){
+      if (startX === null) return;
+      var dx = e.changedTouches[0].clientX - startX;
+      if (Math.abs(dx) > 40) go(current + (dx < 0 ? 1 : -1));
+      startX = null;
+    }, {passive:true});
+  }
 
-  render();
+  fetch('slides.json')
+    .then(function(res){
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      return res.json();
+    })
+    .then(function(data){
+      slides = data;
+      buildSlides();
+      wireControls();
+      render();
+    })
+    .catch(function(err){
+      console.error('Could not load slides.json:', err);
+      capBody.textContent = 'No se pudieron cargar las imágenes (slides.json).';
+    });
 })();
 </script>
 </body>

@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Nathaniel",
+    "land": false,
+    "paragraphs": [
+      "Dicen que los cuervos nunca olvidan un rostro. El mío ha cambiado con los años y la hostilidad de los elementos.",
+      "Ahora vivo en soledad. Las pesadillas y las visiones me visitan a diario, yo les doy la bienvenida y las acepto. Sé que algo murió dentro de mí el día en que acabamos con la maldición. Desde entonces, mi vida ha sido simple. Luego de despedir a mis hermanos —de sangre y de batalla—, decidí emprender un largo viaje por Barovia. Escondí cuidadosamente mis armas en puntos secretos de esta hermosa tierra. Supe muy temprano que había nacido para morir allí y que, por voluntad de los dioses, no lo haría en batalla.",
+      "Lo agradezco.",
+      "Paso los días en una caverna del monte Baratok. Cuando sale el sol, me siento a observar cómo la escarcha se convierte en agua y gotea desde las ramas. Hombres desesperados acuden a mí, esperando que los ayude con sus dolencias. Cuando los dioses me lo permiten, los sano y rechazo sus ofrendas.",
+      "Un viejo cuervo me visita de vez en cuando. Le comparto mi pan y lo saludo con alegría."
+    ]
+  },
+  {
+    "name": "Iván",
+    "land": false,
+    "paragraphs": [
+      "Placeholder closing text for Ivan — the diarist and beast-hunter. What became of him after the gate closed."
+    ]
+  },
+  {
+    "name": "Antulio",
+    "land": false,
+    "paragraphs": [
+      "Placeholder closing text for Antulio — the one who wanted to turn back, and whether he ever got the chance."
+    ]
+  },
+  {
+    "name": "¿Y Barovia?",
+    "land": true,
+    "paragraphs": [
+      "Placeholder closing text for the land itself — what remains once the travelers are gone, and what still waits at the gate."
+    ]
+  }
+]

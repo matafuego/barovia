@@ -1,0 +1,30 @@
+[
+  {
+    "id": "b-barghest",
+    "name": "Barghest",
+    "meta": "Danger — High · Nocturnal",
+    "body": "Sketch and notes to replace. Describe where it was encountered, its behavior, and what — if anything — drives it off.",
+    "sketch": "<path d=\"M20 75 Q30 40 50 35 Q70 40 80 75\" /><circle cx=\"40\" cy=\"50\" r=\"3\" fill=\"currentColor\" stroke=\"none\"/><circle cx=\"60\" cy=\"50\" r=\"3\" fill=\"currentColor\" stroke=\"none\"/><path d=\"M30 78 L25 90 M45 80 L42 92 M55 80 L58 92 M70 78 L75 90\"/>"
+  },
+  {
+    "id": "b-nightshade",
+    "name": "Nightshade Wraith",
+    "meta": "Danger — Severe · Bound to fog",
+    "body": "Placeholder notes. Add first-hand account of an encounter and any lore gathered from villagers.",
+    "sketch": "<path d=\"M50 15 Q25 40 30 70 Q50 90 70 70 Q75 40 50 15 Z\"/><path d=\"M40 45 L44 50 M60 45 L56 50\" stroke-width=\"2.4\"/>"
+  },
+  {
+    "id": "b-hound",
+    "name": "Vistani Hound",
+    "meta": "Danger — Moderate · Pack hunter",
+    "body": "Placeholder notes on temperament, tracking habits, and whether it can be reasoned with — or bribed.",
+    "sketch": "<path d=\"M15 65 Q25 45 45 45 L55 35 L65 45 Q85 45 85 65 Q70 80 50 78 Q30 80 15 65 Z\"/>"
+  },
+  {
+    "id": "b-wolf",
+    "name": "Wolf of the Mist",
+    "meta": "Danger — High · Pack hunter",
+    "body": "Placeholder notes. Describe the mist-wolves' connection to the castle and how to tell one from an ordinary wolf, if it can be told at all.",
+    "sketch": "<path d=\"M18 70 L30 40 L45 55 L55 55 L70 40 L82 70 Q50 85 18 70 Z\"/><circle cx=\"38\" cy=\"52\" r=\"2.5\" fill=\"currentColor\" stroke=\"none\"/><circle cx=\"62\" cy=\"52\" r=\"2.5\" fill=\"currentColor\" stroke=\"none\"/>"
+  }
+]
