@@ -219,6 +219,18 @@
   }
   .diary-index a { font-family: 'Caveat', cursive; font-size: 1.25rem; }
   .doc-index a:hover, .doc-index a:focus-visible { border-color: var(--rust); }
+  .doc-index a.active { color: var(--rust); border-color: var(--rust); }
+  .doc-nav { display: flex; align-items: center; justify-content: center; gap: 18px; margin-top: 28px; }
+  .doc-nav .counter { min-width: 90px; text-align: center; font-family: 'Cinzel', serif; font-size: 12px; letter-spacing: 0.15em; color: var(--ink-soft); }
+  .doc-nav-btn {
+    background: none; border: 1px solid var(--ink-soft); color: var(--rust);
+    width: 42px; height: 42px; border-radius: 50%;
+    cursor: pointer; display: flex; align-items: center; justify-content: center;
+    transition: background .2s ease, transform .15s ease;
+  }
+  .doc-nav-btn:hover { background: rgba(110,42,31,0.1); }
+  .doc-nav-btn:active { transform: scale(0.94); }
+  .doc-nav-btn svg { width: 18px; height: 18px; }
 
   .entry {
     padding: 26px 0 30px;
@@ -370,7 +382,18 @@
         <h4>Index</h4>
         <ul id="diaryIndexList"></ul>
       </aside>
-      <div class="doc-entries" id="diaryEntries"></div>
+      <div class="doc-entries">
+        <article class="entry" id="diaryEntry"></article>
+        <div class="doc-nav">
+          <button class="doc-nav-btn" id="diaryPrev" aria-label="Previous entry">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <div class="counter" id="diaryCounter"></div>
+          <button class="doc-nav-btn" id="diaryNext" aria-label="Next entry">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -395,34 +418,56 @@
 <script>
 (function(){
   var indexList = document.getElementById('diaryIndexList');
-  var entriesWrap = document.getElementById('diaryEntries');
+  var entryEl = document.getElementById('diaryEntry');
+  var counterEl = document.getElementById('diaryCounter');
+  var prevBtn = document.getElementById('diaryPrev');
+  var nextBtn = document.getElementById('diaryNext');
+  var entries = [];
+  var current = 0;
+
+  function render(){
+    var e = entries[current];
+    entryEl.innerHTML =
+      '<p class="entry-date">' + e.date + '</p>' +
+      '<h3 class="entry-title">' + e.title + '</h3>' +
+      '<p class="entry-body">' + e.body.replace(/\n\n/g, '</p><p class="entry-body">') + '</p>';
+    counterEl.textContent = (current + 1) + ' / ' + entries.length;
+    indexList.querySelectorAll('a').forEach(function(a, i){
+      a.classList.toggle('active', i === current);
+    });
+  }
+  function go(i){
+    current = (i + entries.length) % entries.length;
+    render();
+    entryEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
 
   fetch('diary.json')
     .then(function(res){
       if (!res.ok) throw new Error('HTTP ' + res.status);
       return res.json();
     })
-    .then(function(entries){
-      entries.forEach(function(e){
+    .then(function(data){
+      entries = data;
+      entries.forEach(function(e, i){
         var li = document.createElement('li');
-        li.innerHTML = '<a href="#' + e.id + '">' + e.index_label + '</a>';
+        var a = document.createElement('a');
+        a.href = '#diary';
+        a.textContent = e.index_label;
+        a.addEventListener('click', function(evt){ evt.preventDefault(); go(i); });
+        li.appendChild(a);
         indexList.appendChild(li);
-
-        var article = document.createElement('article');
-        article.className = 'entry';
-        article.id = e.id;
-        article.innerHTML =
-          '<p class="entry-date">' + e.date + '</p>' +
-          '<h3 class="entry-title">' + e.title + '</h3>' +
-          '<p class="entry-body">' + e.body + '</p>';
-        entriesWrap.appendChild(article);
       });
+      prevBtn.addEventListener('click', function(){ go(current - 1); });
+      nextBtn.addEventListener('click', function(){ go(current + 1); });
+      render();
     })
     .catch(function(err){
       console.error('Could not load diary.json:', err);
-      entriesWrap.innerHTML = '<p>No se pudo cargar el diario (diary.json).</p>';
+      entryEl.innerHTML = '<p>No se pudo cargar el diario (diary.json).</p>';
     });
 })();
+</script>
 
 (function(){
   var indexList = document.getElementById('bestiaryIndexList');
