@@ -8,7 +8,7 @@
       "images/bestiary/alfombra.png"
     ]
   },
-    {
+  {
     "id": "b-arana-gigante",
     "name": "Araña Gigante",
     "meta": "Peligro — Moderado · Depredadora venenosa",
@@ -17,7 +17,6 @@
       "images/bestiary/spider.png"
     ]
   },
-
   {
     "id": "b-objeto-animado",
     "name": "Objeto Animado",
@@ -208,7 +207,7 @@
       "images/bestiary/nothic.png"
     ]
   },
-    {
+  {
     "id": "b-cieno-de-vino",
     "name": "Cieno de Vino",
     "meta": "Peligro — Bajo · Limo corrosivo",
@@ -226,7 +225,7 @@
       "images/bestiary/woodengolem.png"
     ]
   },
-    {
+  {
     "id": "b-golem-de-ambar",
     "name": "Gólem de Ámbar",
     "meta": "Peligro — Severo · Guardián construido",
@@ -299,7 +298,6 @@
       "images/bestiary/sorrowsworn.png"
     ]
   },
-
   {
     "id": "b-zombi-de-strahd",
     "name": "Zombi de Strahd",
@@ -327,7 +325,6 @@
       "images/bestiary/wights.png"
     ]
   },
-
   {
     "id": "b-adhara-la-bruja",
     "name": "Adhara, la Bruja",
