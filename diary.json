@@ -1,19 +1,11 @@
 [
   {
-    "id": "d-0",
-    "date": "14 de Sintiavr del 433",
-    "index_label": "14 de Sintiavr, 433",
-    "title": "Papá se fue",
-    "body": ".",
-    "img": ""
-  },
-  {
     "id": "d-1",
     "date": "16 de Sintiavr del 433",
     "index_label": "16 de Sintiavr, 433",
     "title": "Las puertas de hierro",
     "body": "Atravesamos las enormes puertas de hierro escoltados por las carretas Vistani. Las cabezas decapitadas que custodian el portal parecen vigilarnos. Nathaniel mantiene la vista al frente, aferrado al símbolo de St. Cuthbert; Antulio reza en silencio a Pelor. No sé en qué parte de este mundo nos encontramos, pero mi instinto me dice que hemos cruzado un límite sin retorno. El aire huele a humedad y muerte. La cacería ha comenzado.",
-    "img": ""
+    "images": ["images/diary/mascahuesos.png","images/diary/mascahuesos.png"]
   },
   {
     "id": "d-2",
@@ -21,7 +13,7 @@
     "index_label": "18 de Sintiavr, 433",
     "title": "Los niños fantasma y Lorgot",
     "body": "Dos espíritus de niños nos guiaron hasta una casa en la aldea de Barovia. Un culto oscuro realizaba sacrificios rituales en sus entrañas. Enfrentamos a la abominación que llamaban Lorgot y la abatimos. Al salir, el mismísimo Strahd von Zarovich hizo acto de presencia exigiendo que nos arrodilláramos. Nathaniel y yo nos resistimos, pero Antulio quedó bajo su hechizo. Papá tenía razón en sus notas: este vampiro no es un simple monstruo, es el dueño absoluto de este infierno.",
-    "img": ""
+    "images": []
   },
   {
     "id": "d-3",
@@ -29,7 +21,7 @@
     "index_label": "19 de Sintiavr, ¿433?",
     "title": "La Sangre de la Viña",
     "body": "Llegamos a la taberna la Sangre de la Viña y conocimos a Ismark. Su padre, el burgomaestre, ha muerto tras los constantes ataques de las criaturas de Strahd. Ayudamos a enterrarlo junto a su hermana Ireena. En el sótano de la iglesia local tuvimos que acabar con Doru, el hijo del sacerdote, convertido en engendro vampírico. Ver a ese padre llorar a su hijo monstruoso me hizo pensar en ti, papá. ¿Cuántas veces nos habrás visto así?",
-    "img": ""
+    "images": []
   },
   {
     "id": "d-4",
@@ -37,7 +29,7 @@
     "index_label": "20 de Sintiavr, 735",
     "title": "Morgantha y los pasteles",
     "body": "Recorremos las calles de esta aldea gris. La gente camina sin alma, resignada. Nos cruzamos con Morgantha, una anciana que vende pasteles a cambio de niños. Es la misma criatura que anotaste en tu diario el 4 de agosto, papá. También visitamos la casa de María; su hija Gertruda ha desaparecido en el castillo. Siento tu presencia en cada rincón, como si estuviera pisando tus mismas huellas sobre la barroca tierra de Barovia.",
-    "img": ""
+    "images": []
   },
   {
     "id": "d-5",
@@ -45,7 +37,7 @@
     "index_label": "21 de Sintiavr, 735",
     "title": "El Viejo Camino Svalich",
     "body": "Salimos por el Viejo Camino Svalich rumbo a Vallaki. Los árboles se cierran sobre nosotros como garras. De camino nos emboscaron unos espantapájaros animados que logré derribar a flechazos. A lo lejos divisamos la silueta del molino del Viejo Mascahuesos. La tensión en el grupo es constante; Nathaniel no se separa de su escudo y Antulio busca incansablemente una señal de la luz de Pelor.",
-    "img": "images/diary/mascahuesos.png"
+    "images": []
   },
   {
     "id": "d-6",
@@ -53,7 +45,7 @@
     "index_label": "22 de Sintiavr, 735",
     "title": "El aquelarre del molino",
     "body": "Día sangriento. Fuimos al molino a confrontar a Morgantha y a su aquelarre de brujas. La pelea fue feroz, pero logramos liberar a dos niños, Freek y Myrtle, que habían sido vendidos por sus propios padres a cambio de pasteles. La bruja mencionó tu nombre, papá; dijo que te vio partir hacia el castillo. Más tarde en Vallaki, detuvimos una masacre en la ataudería al recuperar los huesos sagrados de San Andral y rescatamos a la pequeña Arabel de morir ahogada en el lago.",
-    "img": ""
+    "images": []
   },
   {
     "id": "d-7",
@@ -61,7 +53,7 @@
     "index_label": "23 de Sintiavr, 735",
     "title": "Camino a Kresk",
     "body": "Escoltamos a Ismark, Ireena y los niños hacia el oeste, buscando el refugio de Kresk. Sin embargo, la comuna se niega a abrir sus puertas a extraños a menos que demostremos que podemos sobrevivir una noche entera a la intemperie en el bosque. La neblina empieza a espesarse a nuestro alrededor.",
-    "img": ""
+    "images": []
   },
   {
     "id": "d-8",
@@ -69,7 +61,7 @@
     "index_label": "24 de Sintiavr, 735",
     "title": "La noche en el bosque",
     "body": "Sobrevivimos a una noche de pesadilla en el bosque. Nos atacaron neblilobos, espectros del dolor y una banshee cuyo lamento casi nos destruye. Al amanecer, exhaustos y cubiertos de sangre, los guardias de Kresk nos permitieron entrar. Conocimos al burgomaestre Dimitri Kreskov y a su esposa Ana. Este pueblo huele a miedo y remolachas.",
-    "img": ""
+    "images": []
   },
   {
     "id": "d-9",
@@ -77,7 +69,7 @@
     "index_label": "25 de Sintiavr, 735",
     "title": "El Abad y Vassilka",
     "body": "Ilya, el último hijo de los Kreskov, falleció hoy. Un sujeto llamado el Abad —que vive en la antigua abadía de Santa Markovia— lo resucitó. Pero el muchacho volvió vacío, apático, sin rastro de alma. Descubrimos que el Abad es un ángel caído, un ser desquiciado que profana tumbas para construir una criatura de carne llamada Vassilka. Nos pidió que le consigamos un vestido de novia.",
-    "img": ""
+    "images": []
   },
   {
     "id": "d-10",
@@ -85,7 +77,7 @@
     "index_label": "26 de Sintiavr, 735",
     "title": "La bodega del Mago de los Vinos",
     "body": "Dejamos Kresk para investigar por qué se interrumpió el envío de vino desde la bodega del Mago de los Vinos. Nos encontramos con Davian Martikov y su familia de licántropos-cuervo. Aceptamos ayudarlos a limpiar la bodega, tomada por hordas de blights y druidas oscuros que veneran la maldad del valle.",
-    "img": ""
+    "images": []
   },
   {
     "id": "d-11",
@@ -93,7 +85,7 @@
     "index_label": "27 de Sintiavr, 735",
     "title": "El Árbol de Gulthias",
     "body": "Marchamos hacia la Colina de Antaño para cortar la amenaza de raíz. Destruimos el corrupto Árbol de Gulthias a flechazos y conjuros. En medio de la victoria, el cielo se desgarró y Strahd descendió montado en una pesadilla en llamas. Nos miró con desdén y nos recordó que cada hoja, cada criatura y cada gota de sangre en Barovia le pertenecen.",
-    "img": ""
+    "images": []
   },
   {
     "id": "d-12",
@@ -101,7 +93,7 @@
     "index_label": "28 de Sintiavr, 735",
     "title": "La invitación de Rahadin",
     "body": "Llegamos al lago Varatok y encontramos el carro de la cazadora Ezmeralda d'Avenir junto a la Torre de Khazan. La ayudamos a repeler una jauría de hombres lobo. Antes de irse, llegó Rahadin, el lugarteniente de Strahd. Traía una invitación formal para cenar en el castillo y unas páginas arrancadas de tu diario, papá. Escuchar el coro de almas agonizantes que rodea a Rahadin casi me hace perder el juicio.",
-    "img": ""
+    "images": []
   },
   {
     "id": "d-13",
@@ -109,7 +101,7 @@
     "index_label": "29 de Sintiavr, 735",
     "title": "El rescate de Ireena",
     "body": "Volvimos a Vallaki en secreto. Izek había secuestrado a Ireena. Entramos por la fuerza al palacio del burgomaestre, abatimos a Izek, al burgomaestre y a sus mastines. El pueblo cayó en manos del culto de Fiona Wachter. Recuperamos a Ireena y el vestido de novia que Izek guardaba. Nos echaron de la ciudad bajo amenaza de muerte.",
-    "img": ""
+    "images": []
   },
   {
     "id": "d-14",
@@ -117,7 +109,7 @@
     "index_label": "30 de Sintiavr, 735",
     "title": "La batalla contra el Abad",
     "body": "Le entregamos el vestido al Abad en la Abadía y llevamos a Ireena hacia el estanque de Kresk. Allí, una voz milenaria emergió del agua llamándola; un rayo cruzó el cielo con la furia de Strahd. Revelamos las monstruosidades del Abad y entablamos una dura batalla contra ese ángel caído. Este lugar no tiene salvación divina.",
-    "img": ""
+    "images": []
   },
   {
     "id": "d-15",
@@ -125,7 +117,7 @@
     "index_label": "31 de Sintiavr, 735",
     "title": "Las ruinas de Argynvostholt",
     "body": "Exploramos las ruinas de Argynvostholt, la fortaleza de la Orden del Dragón de Plata. El espíritu del dragón y sus caballeros caídos vagan en una agonía eterna. Aprendimos que la única forma de darles descanso es recuperando el cráneo de Argynvost, que yace trofeo en el castillo de Strahd.",
-    "img": ""
+    "images": []
   },
   {
     "id": "d-16",
@@ -133,7 +125,7 @@
     "index_label": "1 de Octiavr, 735",
     "title": "La maldición de Nathaniel",
     "body": "Cazamos a la manada de hombres lobo en su cueva. Tras abatirlos, la luna llena emergió y la maldición se apoderó de Nathaniel. Tuve que golpear a mi propio hermano hasta dejarlo inconsciente para evitar que la bestia lo consumiera. Logramos curarlo a tiempo. De regreso, atrapamos y eliminamos al vampiro saltarín Haoyu Li, dándole un funeral digno de su lejana tierra.",
-    "img": ""
+    "images": []
   },
   {
     "id": "d-17",
@@ -141,7 +133,7 @@
     "index_label": "2 de Octiavr, 735",
     "title": "La cena en el Castillo Ravenloft",
     "body": "La cena en el Castillo Ravenloft. Cenamos rodeados de lujo maquiavélico y cortesanos chupasangre. Strahd nos habló con una calma aterradora; le ofreció a Nathaniel ser su sucesor. Luego nos entregó el decreto de destierro de Adhara y confesó que te tenía encerrado, papá. Nos ofreció dar marcha atrás o ir a buscarte. Sabíamos que era una trampa, pero el rastro estaba marcado.",
-    "img": ""
+    "images": []
   },
   {
     "id": "d-18",
@@ -149,7 +141,7 @@
     "index_label": "3 de Octiavr, 735",
     "title": "La huida del castillo",
     "body": "Escapamos de las garras del castillo y nos refugiamos temporalmente en las afueras con Ezmeralda para planear el siguiente paso. La sombra de Adhara y el destino de nuestro padre nos consumen.",
-    "img": ""
+    "images": []
   },
   {
     "id": "d-19",
@@ -157,7 +149,7 @@
     "index_label": "4 de Octiavr, 735",
     "title": "Berez y el reencuentro con papá",
     "body": "Llegamos a las ruinas sumergidas de Berez. Nos enfrentamos a la bruja Adhara y a su casa flotante. Y entonces apareciste tú, papá... Convertido en un no muerto, un revenant consumido por el deseo de venganza. Nathaniel te abrazó entre lágrimas y yo no pude sostener la mirada. Luchaste a nuestro lado una última vez antes de descansar para siempre. Nos dejaste tus armas. Te quemamos con sal y fuego como nos enseñaste. Adiós, papá.",
-    "img": ""
+    "images": []
   },
   {
     "id": "d-20",
@@ -165,7 +157,7 @@
     "index_label": "5 de Octiavr, 735",
     "title": "El Paso de Tsolenka",
     "body": "Con el corazón roto y guiados por Kasimiro, iniciamos el gélido ascenso por el Paso de Tsolenka hacia las montañas. El viento helado nos azota el rostro, pero el dolor interno es mucho peor. Vamos en busca de las respuestas finales.",
-    "img": ""
+    "images": []
   },
   {
     "id": "d-21",
@@ -173,7 +165,7 @@
     "index_label": "6 de Octiavr, 735",
     "title": "El Templo Ambarino",
     "body": "El Templo Ambarino. Un mausoleo de conocimiento prohibido y entidades oscuras atrapadas en bloques de ámbar. Combatimos contra calaveras llameantes y exploramos sus pasillos olvidados junto al Lich Exethanter. Antulio, desesperado por salvarnos, aceptó el regalo oscuro de Zhudun, adquiriendo el aspecto de un cadáver pero ganando el poder de desafiar a la muerte. Comprendimos la verdad: Strahd está atado al Poder Oscuro llamado Vampyr. Para liberarnos, hay que cortar ese vínculo.",
-    "img": ""
+    "images": []
   },
   {
     "id": "d-22",
@@ -181,7 +173,7 @@
     "index_label": "7 de Octiavr, 735",
     "title": "Los preparativos finales",
     "body": "Descendimos de la montaña y atravesamos Vallaki por última vez. Reunimos suministros, flechas de plata y la sal necesaria para el gran ritual. Intimidados por nuestra determinación, los guardias no se atrevieron a frenarnos. Los caballeros de Argynvost y las pocas fuerzas aliadas están listos. Mañana marchamos al castillo.",
-    "img": ""
+    "images": []
   },
   {
     "id": "d-23",
@@ -189,6 +181,6 @@
     "index_label": "8 de Octiavr, 735",
     "title": "El final de la pesadilla",
     "body": "El final de la pesadilla. Irrumpimos en el Castillo Ravenloft. Destruí el corazón latente en la torre a flechazos; purgamos las catacumbas de les concubines y recibimos la bendición del espíritu de Sergei. Nathaniel guio la Espada Solar y atravesó a Strahd, obligándolo a replegarse a su ataúd. Corrí hacia su tumba y le clavé la estaca definitiva en el corazón. El conde se desintegró en polvo.\n\nNuestra victoria tuvo un costo sangriento: Ireena murió, pero su alma al fin encontró la paz junto a Sergei. Ajusticiamos a Rahadin. Luego, guiados por el Hollyfante Amadeo y usando los restos sagrados, completamos la lectura de los Salmos del Terror en el Templo Ambarino, aprisionando a Vampyr en el ámbar para siempre.\n\nLas nieblas se han abierto. Barovia vuelve a respirar. Misión cumplida, papá. Volvemos a casa.",
-    "img": ""
+    "images": []
   }
 ]

@@ -4,27 +4,27 @@
     "name": "Barghest",
     "meta": "Danger — High · Nocturnal",
     "body": "Sketch and notes to replace. Describe where it was encountered, its behavior, and what — if anything — drives it off.",
-    "img": "images/bestiary/alfombra.png"
+    "images": []
   },
   {
     "id": "b-nightshade",
     "name": "Nightshade Wraith",
     "meta": "Danger — Severe · Bound to fog",
     "body": "Placeholder notes. Add first-hand account of an encounter and any lore gathered from villagers.",
-    "img": "images/bestiary/amberGolem2.png"
+    "images": []
   },
   {
     "id": "b-hound",
     "name": "Vistani Hound",
     "meta": "Danger — Moderate · Pack hunter",
     "body": "Placeholder notes on temperament, tracking habits, and whether it can be reasoned with — or bribed.",
-    "img": "images/bestiary/arcanoloth.png"
+    "images": []
   },
   {
     "id": "b-wolf",
     "name": "Wolf of the Mist",
     "meta": "Danger — High · Pack hunter",
     "body": "Placeholder notes. Describe the mist-wolves' connection to the castle and how to tell one from an ordinary wolf, if it can be told at all.",
-    "img": "images/bestiary/dragon.png"
+    "images": []
   }
 ]

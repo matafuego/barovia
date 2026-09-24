@@ -280,7 +280,7 @@
   .entry-title { font-family: 'Caveat', cursive; font-size: clamp(1.6rem, 3vw, 2.1rem); color: var(--ink); margin: 0 0 12px; }
   .entry-layout { display: flex; gap: 36px; align-items: flex-start; }
   .entry-text { flex: 1 1 auto; min-width: 0; }
-  .entry-image { flex: 0 0 260px; max-width: 260px; }
+  .entry-images { display: flex; flex-direction: column; gap: 16px; flex: 0 0 260px; max-width: 260px; }
   .entry-image a {
     display: block; position: relative; overflow: hidden;
     border: 1px solid var(--parchment-shadow);
@@ -301,7 +301,7 @@
   .entry-image-hint svg { width: 30px; height: 30px; color: #f2e9d8; }
   @media (max-width: 640px) {
     .entry-layout { flex-direction: column; }
-    .entry-image { flex: 1 1 auto; max-width: 320px; margin: 0 auto; }
+    .entry-images { flex: 1 1 auto; max-width: 320px; width: 100%; margin: 0 auto; }
   }
   .entry-body {
     font-family: 'Caveat', cursive; font-size: clamp(1.15rem, 2vw, 1.35rem); line-height: 1.55;
@@ -531,27 +531,41 @@
   var entries = [];
   var current = 0;
 
+  function imageBlock(src, alt){
+    return '<div class="entry-image">' +
+      '<a href="' + src + '" target="_blank" rel="noopener">' +
+        '<img src="' + src + '" alt="' + alt + '">' +
+        '<span class="entry-image-hint">' +
+          '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">' +
+            '<path d="M1.5 12S5 5 12 5s10.5 7 10.5 7-3.5 7-10.5 7S1.5 12 1.5 12Z"/>' +
+            '<circle cx="12" cy="12" r="3.2"/>' +
+          '</svg>' +
+        '</span>' +
+      '</a>' +
+    '</div>';
+  }
+  // Accepts either an "images" array or a legacy single "img" string.
+  function getImages(e){
+    if (Array.isArray(e.images)) return e.images.filter(Boolean);
+    if (e.img) return [e.img];
+    return [];
+  }
+
   function render(){
     var e = entries[current];
     var textHtml =
       '<p class="entry-date">' + e.date + '</p>' +
       '<h3 class="entry-title">' + e.title + '</h3>' +
       '<p class="entry-body">' + e.body.replace(/\n\n/g, '</p><p class="entry-body">') + '</p>';
-    if (e.img) {
+    var images = getImages(e);
+    if (images.length) {
+      var imagesHtml = '<div class="entry-images">' +
+        images.map(function(src){ return imageBlock(src, e.title); }).join('') +
+        '</div>';
       entryEl.innerHTML =
         '<div class="entry-layout">' +
           '<div class="entry-text">' + textHtml + '</div>' +
-          '<div class="entry-image">' +
-            '<a href="' + e.img + '" target="_blank" rel="noopener">' +
-              '<img src="' + e.img + '" alt="' + e.title + '">' +
-              '<span class="entry-image-hint">' +
-                '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">' +
-                  '<path d="M1.5 12S5 5 12 5s10.5 7 10.5 7-3.5 7-10.5 7S1.5 12 1.5 12Z"/>' +
-                  '<circle cx="12" cy="12" r="3.2"/>' +
-                '</svg>' +
-              '</span>' +
-            '</a>' +
-          '</div>' +
+          imagesHtml +
         '</div>';
     } else {
       entryEl.innerHTML = '<div class="entry-text">' + textHtml + '</div>';
@@ -612,7 +626,6 @@
   var current = 0;
 
   function imageBlock(img, alt){
-    if (!img) return '';
     return '<div class="entry-image">' +
       '<a href="' + img + '" target="_blank" rel="noopener">' +
         '<img src="' + img + '" alt="' + alt + '">' +
@@ -624,6 +637,12 @@
         '</span>' +
       '</a>' +
     '</div>';
+  }
+  // Accepts either an "images" array or a legacy single "img" string.
+  function getImages(b){
+    if (Array.isArray(b.images)) return b.images.filter(Boolean);
+    if (b.img) return [b.img];
+    return [];
   }
 
   // pages[pageIdx] is 0 for the index page, or beastIndex+1 for a beast page.
@@ -652,11 +671,15 @@
       '<p class="beast-name">' + b.name + '</p>' +
       '<p class="beast-meta">' + b.meta + '</p>' +
       '<p class="beast-body">' + b.body + '</p>';
-    if (b.img) {
+    var images = getImages(b);
+    if (images.length) {
+      var imagesHtml = '<div class="entry-images">' +
+        images.map(function(src){ return imageBlock(src, b.name); }).join('') +
+        '</div>';
       entryEl.innerHTML =
         '<div class="entry-layout">' +
           '<div class="entry-text">' + textHtml + '</div>' +
-          imageBlock(b.img, b.name) +
+          imagesHtml +
         '</div>';
     } else {
       entryEl.innerHTML = '<div class="entry-text">' + textHtml + '</div>';
