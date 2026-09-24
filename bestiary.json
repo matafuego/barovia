@@ -1,30 +1,346 @@
 [
   {
-    "id": "b-barghest",
-    "name": "Barghest",
-    "meta": "Danger — High · Nocturnal",
-    "body": "Sketch and notes to replace. Describe where it was encountered, its behavior, and what — if anything — drives it off.",
-    "images": []
+    "id": "b-adhara-la-bruja",
+    "name": "Adhara, la Bruja",
+    "meta": "Peligro — Alto · Hechicera de los pantanos",
+    "body": "Bruja errante de los pantanos de Berez, desterrada por el propio Strahd tras una traición olvidada. Vive en una casa flotante envuelta en niebla y domina a las criaturas del pantano a su antojo. Se dice que guarda un rencor tan viejo como la maldición misma.",
+    "images": [
+      "images/bestiary/Adhara.png"
+    ]
   },
   {
-    "id": "b-nightshade",
-    "name": "Nightshade Wraith",
-    "meta": "Danger — Severe · Bound to fog",
-    "body": "Placeholder notes. Add first-hand account of an encounter and any lore gathered from villagers.",
-    "images": []
+    "id": "b-alfombra-magica",
+    "name": "Alfombra Mágica",
+    "meta": "Peligro — Bajo · Objeto encantado",
+    "body": "Una reliquia tejida con hilos de seda vistani, capaz de volar por voluntad de quien la posee. Se rumorea que perteneció a un noble barovio mucho antes de que las nieblas cerraran el valle.",
+    "images": [
+      "images/bestiary/alfombra.png"
+    ]
   },
   {
-    "id": "b-hound",
-    "name": "Vistani Hound",
-    "meta": "Danger — Moderate · Pack hunter",
-    "body": "Placeholder notes on temperament, tracking habits, and whether it can be reasoned with — or bribed.",
-    "images": []
+    "id": "b-golem-de-ambar",
+    "name": "Gólem de Ámbar",
+    "meta": "Peligro — Severo · Guardián construido",
+    "body": "Erigidos por los hechiceros que una vez habitaron el Templo Ambarino, estos gólems custodian el conocimiento prohibido sellado en bloques de resina. Golpean con fuerza aplastante y no conocen el cansancio ni la piedad.",
+    "images": [
+      "images/bestiary/amberGolem1.png",
+      "images/bestiary/amberGolem2.png"
+    ]
   },
   {
-    "id": "b-wolf",
-    "name": "Wolf of the Mist",
-    "meta": "Danger — High · Pack hunter",
-    "body": "Placeholder notes. Describe the mist-wolves' connection to the castle and how to tell one from an ordinary wolf, if it can be told at all.",
-    "images": []
+    "id": "b-objeto-animado",
+    "name": "Objeto Animado",
+    "meta": "Peligro — Bajo · Encantamiento errático",
+    "body": "Escobas, sillas y otros objetos domésticos cobran vida bajo la magia residual que impregna Barovia. Por lo general inofensivos, pero pueden volverse hostiles si se sienten amenazados.",
+    "images": [
+      "images/bestiary/animatedbroom.png"
+    ]
+  },
+  {
+    "id": "b-arcanoloth",
+    "name": "Arcanoloth",
+    "meta": "Peligro — Severo · Negociador infernal",
+    "body": "Un intermediario de los planos inferiores, elegante y traicionero. Ofrece pactos que parecen ventajosos pero que, sin excepción, sirven a sus propios y oscuros fines.",
+    "images": [
+      "images/bestiary/arcanoloth.png"
+    ]
+  },
+  {
+    "id": "b-armadura-animada",
+    "name": "Armadura Animada",
+    "meta": "Peligro — Moderado · Guardián construido",
+    "body": "Una armadura vacía que se mueve por voluntad propia, normalmente apostada para vigilar tesoros o cámaras olvidadas. Ataca sin descanso ni piedad a cualquier intruso.",
+    "images": [
+      "images/bestiary/armor.png"
+    ]
+  },
+  {
+    "id": "b-banshee",
+    "name": "Banshee",
+    "meta": "Peligro — Severo · Espíritu doliente",
+    "body": "El fantasma de una mujer que murió de forma trágica, condenada a vagar lamentándose por toda la eternidad. Su lamento puede detener el corazón de los vivos con puro terror.",
+    "images": [
+      "images/bestiary/banshee.png"
+    ]
+  },
+  {
+    "id": "b-blights",
+    "name": "Blights",
+    "meta": "Peligro — Moderado · Corrupción vegetal",
+    "body": "Plantas corrompidas por la maldad que impregna el valle, animadas y hostiles hacia todo lo vivo. Suelen aparecer junto a druidas caídos que veneran la oscuridad de Barovia, como los que infestaban la bodega del Mago de los Vinos.",
+    "images": [
+      "images/bestiary/blights and druids.png"
+    ]
+  },
+  {
+    "id": "b-enjambre-de-ciempies",
+    "name": "Enjambre de Ciempiés",
+    "meta": "Peligro — Bajo · Plaga venenosa",
+    "body": "Cientos de ciempiés venenosos que se mueven como una sola masa viviente. Habitan cuevas húmedas y ruinas olvidadas, devorando todo lo que se cruza en su camino.",
+    "images": [
+      "images/bestiary/ciempies.png"
+    ]
+  },
+  {
+    "id": "b-lobo-huargo",
+    "name": "Lobo Huargo",
+    "meta": "Peligro — Moderado · Cazador de manada",
+    "body": "Enormes lobos que cazan en manada, muchas veces bajo la voluntad silenciosa de Strahd. Sus aullidos en la niebla anuncian que la noche —y el peligro que trae consigo— ha llegado.",
+    "images": [
+      "images/bestiary/wolf.png",
+      "images/bestiary/direwolf.png"
+    ]
+  },
+  {
+    "id": "b-dragon-rojo",
+    "name": "Dragón Rojo",
+    "meta": "Peligro — Letal · Tirano alado",
+    "body": "Una criatura mítica de fuego y furia, rara vez vista entre las brumas de Barovia. Su sola presencia bastaría para reducir aldeas enteras a cenizas.",
+    "images": [
+      "images/bestiary/dragon.png"
+    ]
+  },
+  {
+    "id": "b-espectro",
+    "name": "Espectro",
+    "meta": "Peligro — Moderado · Espíritu vengativo",
+    "body": "Restos incorpóreos de almas que murieron con odio en el corazón. Atraviesan paredes y drenan la vitalidad de los vivos con un simple roce helado.",
+    "images": [
+      "images/bestiary/espectro.png"
+    ]
+  },
+  {
+    "id": "b-craneo-llameante",
+    "name": "Cráneo Llameante",
+    "meta": "Peligro — Alto · Guardián arcano no-muerto",
+    "body": "El cráneo flotante de un hechicero muerto hace mucho, envuelto en llamas mágicas. Lanza fuego arcano contra quien profane su descanso, como los que custodian los pasillos del Templo Ambarino.",
+    "images": [
+      "images/bestiary/flameskull.png"
+    ]
+  },
+  {
+    "id": "b-ghast",
+    "name": "Ghast",
+    "meta": "Peligro — Moderado · No-muerto carroñero",
+    "body": "Primos más fuertes y astutos de los ghouls, hieden a muerte y corrupción. Su sola presencia puede paralizar de terror a los de espíritu más débil.",
+    "images": [
+      "images/bestiary/ghast.png"
+    ]
+  },
+  {
+    "id": "b-guerrero-fantasma",
+    "name": "Guerrero Fantasma",
+    "meta": "Peligro — Alto · Espíritu de un caballero",
+    "body": "El alma atormentada de un soldado caído, probablemente uno de los caballeros de la Orden del Dragón de Plata, condenado a repetir su última batalla por toda la eternidad entre las ruinas de Argynvostholt.",
+    "images": [
+      "images/bestiary/ghost fighter.png"
+    ]
+  },
+  {
+    "id": "b-fantasma",
+    "name": "Fantasma",
+    "meta": "Peligro — Moderado · Espíritu errante",
+    "body": "Un alma que se niega a abandonar el mundo de los vivos, atada por asuntos sin resolver o una muerte injusta. Puede poseer a los vivos si su desesperación es suficiente.",
+    "images": [
+      "images/bestiary/ghost.png"
+    ]
+  },
+  {
+    "id": "b-ghoul",
+    "name": "Ghoul",
+    "meta": "Peligro — Moderado · No-muerto carroñero",
+    "body": "No-muertos hambrientos que se alimentan de carne humana. Su zarpazo puede paralizar a su presa, dejándola indefensa ante su apetito insaciable.",
+    "images": [
+      "images/bestiary/ghoul.png"
+    ]
+  },
+  {
+    "id": "b-grick",
+    "name": "Grick",
+    "meta": "Peligro — Moderado · Depredador de cavernas",
+    "body": "Una criatura serpentina de tentáculos afilados que acecha en la oscuridad, camuflándose entre las rocas hasta que su presa está lo bastante cerca para atacar.",
+    "images": [
+      "images/bestiary/grick.png"
+    ]
+  },
+  {
+    "id": "b-jiangshi",
+    "name": "Jiangshi",
+    "meta": "Peligro — Alto · No-muerto saltarín",
+    "body": "Un cadáver reanimado que se desplaza a saltos rígidos, oriundo de tierras lejanas más allá de las nieblas de Barovia. Drena el aliento vital de los vivos con sus garras heladas.",
+    "images": [
+      "images/bestiary/jiangshi.png"
+    ]
+  },
+  {
+    "id": "b-lorgot-el-pudridor",
+    "name": "Lorgot, el Pudridor",
+    "meta": "Peligro — Alto · Montículo viviente",
+    "body": "Una masa de vegetación podrida y carne en descomposición que habitaba las entrañas de una casa en la aldea de Barovia, alimentada por los sacrificios de un culto oscuro. Aplasta y asfixia a quien se acerque demasiado.",
+    "images": [
+      "images/bestiary/lorgot.png"
+    ]
+  },
+  {
+    "id": "b-mandriano",
+    "name": "Mandriano",
+    "meta": "Peligro — Desconocido · Criatura del valle",
+    "body": "Poco se sabe de esta criatura más allá de los rumores que corren entre los aldeanos asustados. Se recomienda extrema precaución hasta reunir más observaciones de campo.",
+    "images": [
+      "images/bestiary/mandriano.png"
+    ]
+  },
+  {
+    "id": "b-mimico",
+    "name": "Mímico",
+    "meta": "Peligro — Moderado · Depredador camuflado",
+    "body": "Una criatura cambiaformas que imita objetos comunes —cofres, puertas, muebles— para atrapar a incautos aventureros. Sus fauces ocultas se cierran sin previo aviso.",
+    "images": [
+      "images/bestiary/mimic.png"
+    ]
+  },
+  {
+    "id": "b-loup-garou",
+    "name": "Loup Garou",
+    "meta": "Peligro — Alto · Maldición licantrópica",
+    "body": "Los lobos de niebla que rondan los bosques de Barovia, portadores de una antigua maldición licantrópica. Cazan en manada bajo el manto de la neblina nocturna, casi invisibles hasta que es demasiado tarde.",
+    "images": [
+      "images/bestiary/neblilobos.png"
+    ]
+  },
+  {
+    "id": "b-nothic",
+    "name": "Nothic",
+    "meta": "Peligro — Moderado · Aberración degenerada",
+    "body": "Antiguo mago corrompido por magia prohibida hasta perder toda su humanidad. Su mirada rota puede desgarrar la carne desde la distancia.",
+    "images": [
+      "images/bestiary/nothic.png"
+    ]
+  },
+  {
+    "id": "b-retrato-magico",
+    "name": "Retrato Mágico",
+    "meta": "Peligro — Bajo · Objeto encantado",
+    "body": "Un cuadro imbuido de magia que parece observar, y en ocasiones hablar, a quienes se detienen frente a él. Algunos dicen que guarda secretos sobre el pasado de Barovia.",
+    "images": [
+      "images/bestiary/portrait.png"
+    ]
+  },
+  {
+    "id": "b-retornado",
+    "name": "Retornado",
+    "meta": "Peligro — Alto · No-muerto vengativo",
+    "body": "Un alma que regresa del más allá impulsada por un único propósito: la venganza. Ni la muerte puede detener a un retornado decidido a cumplir su última voluntad, como le ocurrió a nuestro padre en Berez.",
+    "images": [
+      "images/bestiary/retornado.png"
+    ]
+  },
+  {
+    "id": "b-roc",
+    "name": "Roc",
+    "meta": "Peligro — Letal · Ave colosal",
+    "body": "Un ave de proporciones descomunales, capaz de cargar presas del tamaño de un carruaje entre sus garras. Si tiene nido en Barovia, debe estar en las cumbres más inaccesibles del valle.",
+    "images": [
+      "images/bestiary/roc.png"
+    ]
+  },
+  {
+    "id": "b-fantasmas-de-los-ninos",
+    "name": "Fantasmas de los Niños",
+    "meta": "Peligro — Bajo · Espíritus guía",
+    "body": "Las almas de dos niños que vagan por la aldea de Barovia. Lejos de ser hostiles, parecen guiar a los viajeros hacia el peligro y la verdad a partes iguales.",
+    "images": [
+      "images/bestiary/rose&thorn.png"
+    ]
+  },
+  {
+    "id": "b-espantapajaros",
+    "name": "Espantapájaros",
+    "meta": "Peligro — Moderado · Guardián animado",
+    "body": "Muñecos de paja y madera animados por magia oscura, apostados a lo largo de caminos solitarios como el Viejo Camino Svalich. Atacan en emboscada a quienes se atreven a pasar.",
+    "images": [
+      "images/bestiary/scarecrow.png"
+    ]
+  },
+  {
+    "id": "b-doncella-de-nieve",
+    "name": "Doncella de Nieve",
+    "meta": "Peligro — Alto · Espíritu del invierno",
+    "body": "Una entidad gélida que aparece entre ventiscas, atrayendo a los viajeros perdidos con su belleza espectral antes de congelarlos hasta la muerte.",
+    "images": [
+      "images/bestiary/snowmaiden.png"
+    ]
+  },
+  {
+    "id": "b-atormentado-por-el-dolor",
+    "name": "Atormentado por el Dolor",
+    "meta": "Peligro — Alto · Encarnación de la pena",
+    "body": "Una entidad nacida de la tristeza y el sufrimiento acumulado, que se alimenta del dolor ajeno para crecer en poder. Cuanto más se llora en Barovia, más fuerte se vuelve.",
+    "images": [
+      "images/bestiary/sorrowsworn.png"
+    ]
+  },
+  {
+    "id": "b-arana-gigante",
+    "name": "Araña Gigante",
+    "meta": "Peligro — Moderado · Depredadora venenosa",
+    "body": "Arácnidos del tamaño de un caballo que tejen telarañas capaces de atrapar presas enormes. Su veneno paraliza lentamente mientras esperan para alimentarse.",
+    "images": [
+      "images/bestiary/spider.png"
+    ]
+  },
+  {
+    "id": "b-zombi-de-strahd",
+    "name": "Zombi de Strahd",
+    "meta": "Peligro — Bajo · No-muerto sirviente",
+    "body": "Cadáveres reanimados por la voluntad directa del Conde, usados como carne de cañón para defender sus dominios. Lentos, pero implacables en número.",
+    "images": [
+      "images/bestiary/strahdzombie.png"
+    ]
+  },
+  {
+    "id": "b-vastago-vampirico",
+    "name": "Vástago Vampírico",
+    "meta": "Peligro — Alto · Sirviente no-muerto",
+    "body": "Vampiros menores creados por la mordida de Strahd u otro vampiro poderoso, obligados a servir a su creador. Conservan la sed de sangre pero no la voluntad propia de un vampiro verdadero.",
+    "images": [
+      "images/bestiary/vampirespawn.png"
+    ]
+  },
+  {
+    "id": "b-vampyr",
+    "name": "Vampyr",
+    "meta": "Peligro — Incalculable · Poder Oscuro",
+    "body": "La entidad primigenia a la que Strahd von Zarovich está atado, la fuente misma de su poder inmortal. Cortar ese vínculo es la única forma real de liberar Barovia de su maldición.",
+    "images": [
+      "images/bestiary/vampyr.png"
+    ]
+  },
+  {
+    "id": "b-wight",
+    "name": "Wight",
+    "meta": "Peligro — Moderado · No-muerto guerrero",
+    "body": "Antiguos guerreros caídos que se levantan como no-muertos conscientes, conservando parte de su habilidad marcial en combate. Su toque drena la vida de los vivos.",
+    "images": [
+      "images/bestiary/wights.png"
+    ]
+  },
+  {
+    "id": "b-cieno-de-vino",
+    "name": "Cieno de Vino",
+    "meta": "Peligro — Bajo · Limo corrosivo",
+    "body": "Una masa amorfa surgida de barriles de vino corrompidos por magia oscura, hallada en la bodega del Mago de los Vinos. Disuelve lentamente todo lo que toca.",
+    "images": [
+      "images/bestiary/wineooze.png"
+    ]
+  },
+  {
+    "id": "b-golem-de-madera",
+    "name": "Gólem de Madera",
+    "meta": "Peligro — Alto · Guardián del bosque",
+    "body": "Un coloso hecho de raíces y madera antigua, animado para proteger los rincones más sagrados —o corrompidos— del bosque de Barovia. Sus puños pueden partir árboles enteros.",
+    "images": [
+      "images/bestiary/woodengolem.png"
+    ]
   }
 ]
