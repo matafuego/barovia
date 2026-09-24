@@ -222,9 +222,9 @@
   .doc-index a.active { color: var(--rust); border-color: var(--rust); }
 
   .entry-nav-top {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    justify-content: space-between;
     gap: 16px;
     padding-bottom: 20px;
     margin-bottom: 34px;
@@ -239,10 +239,10 @@
     cursor: pointer;
     color: var(--rust);
     padding: 6px 0;
-    max-width: 38%;
     min-width: 0;
+    justify-self: start;
   }
-  .entry-nav-link.next { flex-direction: row-reverse; text-align: right; margin-left: auto; }
+  .entry-nav-link.next { flex-direction: row-reverse; text-align: right; justify-self: end; }
   .entry-nav-link:disabled { opacity: 0.25; cursor: default; pointer-events: none; }
   .entry-nav-link:hover:not(:disabled) .entry-nav-date { border-color: var(--rust); }
   .entry-nav-arrow { font-size: 1.3rem; line-height: 1; flex: 0 0 auto; color: var(--rust); }
@@ -260,11 +260,11 @@
   .entry-nav-counter {
     font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 0.15em;
     color: var(--ink-soft); flex: 0 0 auto;
+    justify-self: center;
   }
   @media (max-width: 560px) {
     .entry-nav-caption { display: none; }
     .entry-nav-date { font-size: 1rem; }
-    .entry-nav-link { max-width: 42%; }
   }
 
   .entry {
@@ -312,6 +312,47 @@
   .beast-name { font-family: 'Kalam', cursive; font-weight: 700; font-size: clamp(1.4rem, 2.5vw, 1.9rem); color: var(--rust); margin: 0 0 6px; }
   .beast-meta { font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 0.1em; color: var(--ink-soft); margin: 0 0 10px; text-transform: uppercase; }
   .beast-body { font-family: 'Kalam', cursive; font-size: clamp(1rem, 1.6vw, 1.15rem); line-height: 1.6; color: var(--ink); }
+
+  .beast-index-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 4px 24px;
+    max-width: 640px;
+  }
+  .beast-index-name-link {
+    display: block;
+    padding: 10px 4px;
+    font-family: 'Kalam', cursive; font-size: 1.1rem;
+    color: var(--rust);
+    text-decoration: none;
+    border-bottom: 1px solid var(--parchment-shadow);
+    cursor: pointer;
+    transition: color .2s ease, border-color .2s ease;
+  }
+  .beast-index-name-link:hover { color: var(--ink); border-color: var(--rust); }
+
+  .entry-nav-index-link {
+    background: none;
+    border: none;
+    color: var(--rust);
+    cursor: pointer;
+    padding: 6px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    justify-self: center;
+    transition: color .2s ease;
+  }
+  .entry-nav-index-link:hover .entry-nav-index-label { border-color: var(--rust); }
+  .entry-nav-index-link:disabled { opacity: 0.4; cursor: default; pointer-events: none; }
+  .entry-nav-index-label {
+    font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase;
+    border-bottom: 1px solid transparent; transition: border-color .2s ease;
+  }
+  .entry-nav-index-count {
+    font-family: 'Cinzel', serif; font-size: 10px; letter-spacing: 0.1em; color: var(--ink-soft);
+  }
 
   /* ============ EPILOGUE ============ */
   #epilogue {
@@ -463,7 +504,10 @@
           <span class="entry-nav-date" id="bestiaryPrevName"></span>
         </span>
       </button>
-      <div class="entry-nav-counter" id="bestiaryCounter"></div>
+      <button class="entry-nav-index-link" id="bestiaryIndexLink">
+        <span class="entry-nav-index-label">Índice</span>
+        <span class="entry-nav-index-count" id="bestiaryIndexCount"></span>
+      </button>
       <button class="entry-nav-link next" id="bestiaryNext">
         <span class="entry-nav-label">
           <span class="entry-nav-caption">Siguiente</span>
@@ -556,12 +600,15 @@
 <script>
 (function(){
   var entryEl = document.getElementById('bestiaryEntry');
-  var counterEl = document.getElementById('bestiaryCounter');
   var prevBtn = document.getElementById('bestiaryPrev');
   var nextBtn = document.getElementById('bestiaryNext');
   var prevNameEl = document.getElementById('bestiaryPrevName');
   var nextNameEl = document.getElementById('bestiaryNextName');
+  var indexLinkBtn = document.getElementById('bestiaryIndexLink');
+  var indexCountEl = document.getElementById('bestiaryIndexCount');
   var beasts = [];
+  // pages[0] is the index; pages[1..] map to beasts[0..]
+  var pages = [];
   var current = 0;
 
   function imageBlock(img, alt){
@@ -579,8 +626,28 @@
     '</div>';
   }
 
-  function render(){
-    var b = beasts[current];
+  // pages[pageIdx] is 0 for the index page, or beastIndex+1 for a beast page.
+  function labelFor(pageIdx){
+    var p = pages[pageIdx];
+    return p === 0 ? 'Índice' : beasts[p - 1].name;
+  }
+
+  function renderIndexPage(){
+    var html = '<div class="beast-index-list">';
+    beasts.forEach(function(b, i){
+      html += '<a href="#bestiary" class="beast-index-name-link" data-beast="' + i + '">' + b.name + '</a>';
+    });
+    html += '</div>';
+    entryEl.innerHTML = html;
+    entryEl.querySelectorAll('.beast-index-name-link').forEach(function(link){
+      link.addEventListener('click', function(evt){
+        evt.preventDefault();
+        go(parseInt(link.getAttribute('data-beast'), 10) + 1);
+      });
+    });
+  }
+
+  function renderBeastPage(b){
     var textHtml =
       '<p class="beast-name">' + b.name + '</p>' +
       '<p class="beast-meta">' + b.meta + '</p>' +
@@ -594,26 +661,38 @@
     } else {
       entryEl.innerHTML = '<div class="entry-text">' + textHtml + '</div>';
     }
-    counterEl.textContent = (current + 1) + ' / ' + beasts.length;
+  }
+
+  function render(){
+    var page = pages[current];
+    if (page === 0) {
+      renderIndexPage();
+      indexCountEl.textContent = '';
+    } else {
+      renderBeastPage(beasts[page - 1]);
+      indexCountEl.textContent = page + ' / ' + beasts.length;
+    }
+
+    indexLinkBtn.disabled = (current === 0);
 
     if (current > 0) {
       prevBtn.disabled = false;
-      prevNameEl.textContent = beasts[current - 1].name;
+      prevNameEl.textContent = labelFor(current - 1);
     } else {
       prevBtn.disabled = true;
       prevNameEl.textContent = '';
     }
-    if (current < beasts.length - 1) {
+    if (current < pages.length - 1) {
       nextBtn.disabled = false;
-      nextNameEl.textContent = beasts[current + 1].name;
+      nextNameEl.textContent = labelFor(current + 1);
     } else {
       nextBtn.disabled = true;
       nextNameEl.textContent = '';
     }
   }
-  function go(i){
-    if (i < 0 || i >= beasts.length) return;
-    current = i;
+  function go(pageIdx){
+    if (pageIdx < 0 || pageIdx >= pages.length) return;
+    current = pageIdx;
     render();
   }
 
@@ -624,8 +703,11 @@
     })
     .then(function(data){
       beasts = data;
+      pages = [0];
+      beasts.forEach(function(b, i){ pages.push(i + 1); });
       prevBtn.addEventListener('click', function(){ go(current - 1); });
       nextBtn.addEventListener('click', function(){ go(current + 1); });
+      indexLinkBtn.addEventListener('click', function(){ go(0); });
       render();
     })
     .catch(function(err){
