@@ -1,42 +1,131 @@
 [
   {
+    "id": "d-0",
+    "date": "13 de Septiembre del 433",
+    "index_label": "13 de Septiembre del 433",
+    "title": "La pista Barovia",
+    "body": "Papá salió a cazar y no ha regresado en unos meses. Necesito encontrar a Nathaniel. Necesito que me ayude a encontrarlo. Es normal que desaparezca, pero no así. ¿Puedo buscarlo solo? Sí, pero no quiero hacerlo. Quiero ver a mi hermano, hace años que está en ese hospicio. Hay algo más. Papá nos dejó su libro. Su posesión más valiosa. Todo lo que sabe sobre cada cosa malvada está aquí. Y nos lo ha heredado. Creo que quiere que sigamos donde él lo dejó. Salvar personas, cazar cosas. El negocio familiar. Pero una cosa me preocupa: el libro menciona a Barovia. No menciona una forma de llegar, pero menciona haberla escuchado en un lugar llamado Briarglen. Allá voy. Allá vamos. Allá iremos. ",
+    "images": []
+  },
+  {
+    "id": "d-00",
+    "date": "14 de Septiembre del 433",
+    "index_label": "14 de Septiembre del 433",
+    "title": "Reencuentro",
+    "body": "Bastó la sola mención de la palabra Barovia para que Nathaniel deje todo y se sume a la búsqueda. Está determinado.Enfocado. Por alguna razón esconde su rostro detrás de una enorme capucha. Un capirote lo llama. Algo que ver con la penitencia. Está atormentado, siempre lo estuvo. Esperaba que en el hospicio pudieran calmar su mente. Creo que la muerte de mamá pesa mucho en él. Mucho más que en todos. Mucho más que en papá. Y eso es mucho. Briarglen está cerca. ",
+    "images": []
+  },
+  {
+    "id": "d-000",
+    "date": "18 de Septiembre del 433",
+    "index_label": "18 de Septiembre del 433",
+    "title": "Nieblas y Vistanis",
+    "body": "Llegamos a Briarglen acompañando una peregrinación encabezada por Nathaniel, con la intención de ofrecer nuestra ayuda en la frontera. A poco de llegar, un monaguillo de San Cuthbert llamado Alistair vino a buscarlo desesperadamente. Estaba muy preocupado por un grupo de viajeros rebeldes que se han vuelto violentos y exigen dinero a todo el que pasa. Conocimos a Antulio, un joven clérigo de Pelor, quien nos acompañó a hablar con ellos. Una niebla espesa asfixiaba la noche. Nos acercamos al campamento y se presentaron como Vistanis. Alrededor del fuego y con una jarra de vino nos contaron una vieja historia, un relato desgarrador que parecía hablar directamente sobre el origen y la sombra de alguien llamado Strahd. Madame Eva, su líder, había previsto nuestra llegada... ¿Y ellos estaban ahí buscándonos? Según sus visiones héroes como nosotros son los únicos que podrían poner fin a esta terrible maldición. Nos preguntaron si queríamos regresar con ellos a Barovia. No hubo dudas entre nosotros. Antulio tampoco hesitó. Curioso personaje. Papá, vamos camino a Barovia.",
+    "images": []
+  },
+  {
     "id": "d-1",
-    "date": "16 de Sintiavr del 433",
-    "index_label": "16 de Sintiavr, 433",
+    "date": "19 de Septiembre del 433",
+    "index_label": "19 de Septiembre, 433",
     "title": "Las puertas de hierro",
-    "body": "Atravesamos las enormes puertas de hierro escoltados por las carretas Vistani. Las cabezas decapitadas que custodian el portal parecen vigilarnos. Nathaniel mantiene la vista al frente, aferrado al símbolo de St. Cuthbert; Antulio reza en silencio a Pelor. No sé en qué parte de este mundo nos encontramos, pero mi instinto me dice que hemos cruzado un límite sin retorno. El aire huele a humedad y muerte. La cacería ha comenzado.",
-    "images": ["images/diary/mascahuesos.png","images/diary/mascahuesos.png"]
+    "body": "La resaca de vino barato es mala. Muy mala. Despertamos en los carromatos vistanis e inmediatamente nos sentimos en otra tierra. Atravesamos unas enormes puertas de hierro. Las cabezas decapitadas que custodian el portal parecen vigilarnos. Nathaniel mantiene la vista al frente, creo, es difícil entender lo que pasa debajo de esa capucha. Antulio reza en silencio. ¿Por qué nos acompaña? ¿Quién es? No sé en qué parte de este mundo nos encontramos, pero mi instinto me dice que hemos cruzado un límite sin retorno. El aire huele a humedad y muerte. Un enorme castillo observa todo desde lo alto de una colina. La cacería ha comenzado.",
+    "images": [
+      "images/diary/castle.png"
+    ]
+  },
+  {
+    "id": "d-1.1",
+    "date": "19 de Septiembre del 433",
+    "index_label": "19 de Septiembre, 433",
+    "title": "Ojos rojos",
+    "body": "Esta tierra está llena de muertos vivos. Llena. Intenté concentrarme como me enseñó papá para poder sentirlos, olerlos, escucharlos, y pude notar que a nuestro alrededor hay cientos, miles. Más de los que conozco. Más de los que alguna vez escuché. Pero lo más perturbador no fue su cantidad, sino una sensación de no estar solos. En medio de la penumbra sentí una presencia aplastante observándome. Unos enormes ojos rojos brillando desde la oscuridad de la niebla, midiendo cada uno de nuestros movimientos. El dueño de este infierno sabe que estamos aquí.",
+    "images": [
+      "images/diary/eyes.jpg"
+    ]
   },
   {
     "id": "d-2",
-    "date": "18 de Sintiavr del 433",
-    "index_label": "18 de Sintiavr, 433",
-    "title": "Los niños fantasma y Lorgot",
-    "body": "Dos espíritus de niños nos guiaron hasta una casa en la aldea de Barovia. Un culto oscuro realizaba sacrificios rituales en sus entrañas. Enfrentamos a la abominación que llamaban Lorgot y la abatimos. Al salir, el mismísimo Strahd von Zarovich hizo acto de presencia exigiendo que nos arrodilláramos. Nathaniel y yo nos resistimos, pero Antulio quedó bajo su hechizo. Papá tenía razón en sus notas: este vampiro no es un simple monstruo, es el dueño absoluto de este infierno.",
-    "images": []
+    "date": "19 de Septiembre del 433",
+    "index_label": "19 de Septiembre, 433",
+    "title": "Rosa y Espina",
+    "body": "Dos espíritus de niños nos guiaron hasta una casa en la aldea de Barovia. Un culto oscuro, el culto de Osybus, realizaba sacrificios rituales en sus entrañas. Sus padres pertenecían a este culto y los habían sacrificado a ellos. Enfermos. Enfrentamos a la abominación que llamaban Lorgot y la abatimos. Encontramos unos papeles de Strahd Von Zarovich enojado con estas personas, a las que llamó patéticos sirvientes. También una escritura de un molino. Al salir, el mismísimo Strahd von Zarovich apareció exigiendo que nos arrodilláramos: \"Es costumbre de esta tierra que ustedes muestren respeto a su gobernante.\" Nathaniel y yo lo hicimos, pero Antulio quiso resistirse y quedó bajo su hechizo. Este vampiro no es un simple monstruo, es el dueño absoluto de este infierno.",
+    "images": [
+      "images/bestiary/rosethorn.png",
+      "images/diary/estatuilla.png"
+    ]
   },
   {
     "id": "d-3",
-    "date": "19 de Sintiavr del ¿433?",
-    "index_label": "19 de Sintiavr, ¿433?",
+    "date": "20 de Septiembre del ¿433?",
+    "index_label": "20 de Septiembre, ¿433?",
     "title": "La Sangre de la Viña",
-    "body": "Llegamos a la taberna la Sangre de la Viña y conocimos a Ismark. Su padre, el burgomaestre, ha muerto tras los constantes ataques de las criaturas de Strahd. Ayudamos a enterrarlo junto a su hermana Ireena. En el sótano de la iglesia local tuvimos que acabar con Doru, el hijo del sacerdote, convertido en engendro vampírico. Ver a ese padre llorar a su hijo monstruoso me hizo pensar en ti, papá. ¿Cuántas veces nos habrás visto así?",
-    "images": []
-  },
-  {
-    "id": "d-4",
-    "date": "20 de Sintiavr del 735",
-    "index_label": "20 de Sintiavr, 735",
-    "title": "Morgantha y los pasteles",
-    "body": "Recorremos las calles de esta aldea gris. La gente camina sin alma, resignada. Nos cruzamos con Morgantha, una anciana que vende pasteles a cambio de niños. Es la misma criatura que anotaste en tu diario el 4 de agosto, papá. También visitamos la casa de María; su hija Gertruda ha desaparecido en el castillo. Siento tu presencia en cada rincón, como si estuviera pisando tus mismas huellas sobre la barroca tierra de Barovia.",
-    "images": []
+    "body": "Algunas anotaciones encontradas en la casa me hacen dudar del año en el que estamos, e incluso el mes. Año 735. Mes de Sintiavr. ¿Dónde estamos? Fuimos a la taberna la Sangre de la Viña y conocimos a Ismark. Su padre, el burgomaestre, ha muerto tras los constantes ataques de las criaturas de Strahd. Strahd mordió dos veces a su hermana, Irina, y los ataques de ¿sus? criaturas son incesantes. Ayudamos a enterrarlo. Los ritos funerarios son importantes. Irina está desconsolada. Su padre está en un lugar mejor, pero ella no lo quiere ver así. Ismark nos pide ayuda para poder esconder a su hermana del vampiro, en Vallaki o en Kresk, dos ciudades al este, podríamos encontrar lugares en los que ella esté a salvo. Aceptamos ayudarlos. También sabemos de una procesión de espíritus que atraviesan Barovia para arrojarse desde lo alto del castillo de Ravenloft, ese es el nombre del castillo. Nos dicen que son quienes se enfrentaron a Strahd y fallaron. Temo verte ahí papá, pero no puedo esconderme. La próxima vez que pasen te voy a buscar entre ellos. Y no te voy a encontrar. Estoy seguro. En el sótano de la iglesia local tuvimos que acabar con Doru, el hijo del sacerdote, convertido en retoño vampírico. Ver a ese padre llorar a su hijo monstruoso me hizo pensar en ti, papá. ¿Cuántas veces habrás pensado que todo iba a terminar así?",
+    "images": [
+      "images/diary/ismark.png",
+      "images/diary/procesion.png"
+    ]
   },
   {
     "id": "d-5",
     "date": "21 de Sintiavr del 735",
     "index_label": "21 de Sintiavr, 735",
     "title": "El Viejo Camino Svalich",
-    "body": "Salimos por el Viejo Camino Svalich rumbo a Vallaki. Los árboles se cierran sobre nosotros como garras. De camino nos emboscaron unos espantapájaros animados que logré derribar a flechazos. A lo lejos divisamos la silueta del molino del Viejo Mascahuesos. La tensión en el grupo es constante; Nathaniel no se separa de su escudo y Antulio busca incansablemente una señal de la luz de Pelor.",
+    "body": "Salimos por el Viejo Camino Svalich rumbo a Vallaki. Un cuervo parecía seguirnos e intenté asustarlo con una flecha.Cruzando un puente sobre el río Iblis fuimos emboscados por unos lobos que quisieron llevarse a Irina. La furia estruendosa de Nathaniel los arrojó hacia el río. Los bosques de esta región se ven muy oscuros, los árboles se cierran sobre nosotros como garras. De camino nos emboscaron unos espantapájaros animados que logramos derrotar. A lo lejos divisamos la silueta del molino del Viejo Mascahuesos. La tensión en el grupo es constante; Nathaniel se aferra con fuerza a su escudo y Antulio busca incansablemente una señal de la luz de Pelor, una luz que parece no brillar en estas tierras.",
+    "images": [
+      "images/diary/iblis.png",
+      "images/diary/mascahuesos.png",
+      "images/diary/arrowraven.png"
+    ]
+  },
+  {
+    "id": "d-5.1",
+    "date": "21 de Sintiavr del 735",
+    "index_label": "21 de Sintiavr, 735",
+    "title": "Incendio en la ataudería",
+    "body": "Llegamos a la capilla de San Andral y descubrimos que no podía ayudarnos: los huesos del santo habían sido robados de su cripta, y sin los huesos la capilla no es un lugar seguro para Irina. Nathaniel interrogó al joven Miliboj quien terminó confesando que él los tomó y se los vendió al ataudero, un tal Henrik van der Voort. Fuimos a la ataudería a encararlo y pude sentir que ocultos en el lugar nos aguardaban varios retoños vampíricos. El fuego fue nuestro aliado en este combate, pero a la vez nuestro enemigo al propagarse por todo el lugar. Cuando todo parecía perdido unos cuervos nos ayudaron desde fuera y... ¿Antulio desplegó unas alas celestiales? ¿Quién es este tipo? Afortunadamente logramos recuperar las reliquias y entregamos al ataudero ante la severa autoridad del Barón Vargas Vallakovitch quien se dispuso a darle un castigo ejemplar. \"Todo va a estar bien\", repite sin cesar. ¿Todo va a estar bien?",
+    "images": [
+      "images/diary/vallaki.png",
+      "images/diary/incendio.png",
+      "images/diary/vargas.png",
+      "images/diary/izek.png"
+    ]
+  },
+  {
+    "id": "d-5.2",
+    "date": "21 de Sintiavr del 735",
+    "index_label": "21 de Sintiavr, 735",
+    "title": "Los elfos del ocaso",
+    "body": "Más tarde nos dirigimos al lago Varatok. Allí salvamos a la pequeña Arabel de morir ahogada en esas aguas heladas a manos de un borracho que la había secuestrado creyendo que tenerla le traería suerte en la pesca. La llevamos de regreso sana y salva al campamento Vistani donde conocimos a su padre Lubash y a su tío Arrigal. Aleksei, quien debía custodiar a la niña, fue castigado con latigazos ante la vista de toda su gente por su descuido. Nos contaron la historia de Patrina, una elfa del ocaso que fue concubina de Strahd y por esa traición fue lapidada. Strahd no dudó en castigarlos por ello, asesinando a todas las mujeres y cortando las orejas de su hermano: Casimiro. La sangre nunca cesa de brotar en estas tierras.",
+    "images": [
+      "images/diary/vistanis.png"
+    ]
+  },
+  {
+    "id": "d-5.3",
+    "date": "21 de Sintiavr del 735",
+    "index_label": "21 de Sintiavr, 735",
+    "title": "¿Quién es Antulio?",
+    "body": "Dice que tuvo un sueño sobre nosotros y por eso nos acompaña. Es un clérigo de Pelor, dios del Sol, algo que no se ve en estas tierras, dios de la bondad, algo que escasea también. ¿Qué hace acá con nosotros? En la ataudería desplegó unas enormes alas celestiales. ¿Es un ángel? No parece un ángel. Desconfío de los ángeles. La gente habla de su supuesta bondad y se olvida de que son tan monstruos como cualquier otra criatura así de poderosa. Y bondad puede significar algo muy distinto cuando mirás todo desde arriba. Sin embargo Antulio parece bueno. Muy curioso. ¿Quién es Antulio? Por ahora nuestro compañero. El futuro dirá.",
+    "images": [
+      "images/diary/antulio.png"
+    ]
+  },
+  {
+    "id": "d-5.0",
+    "date": "21 de Sintiavr del 735",
+    "index_label": "21 de Sintiavr, 735",
+    "title": "La Vidente",
+    "body": "¿Puede alguien saber el futuro? ¿El futuro ya existe? En estas tierras parecen confiar en unas cartas llamadas Taroka. Madame Eva, la líder vistani que mandó por nosotros, vive en unos carromatos junto con su gente en la laguna del Tser, y nos contó lo que veía en estas cartas para nosotros. Cada revelación parecía tanto un presagio como una advertencia. \n\"El Paladín\": Habla de un príncipe dorado, un sirviente de la luz y hermano de las sombras. Dice que el tesoro se encuentra junto a él. \n\"El Transmutador\": Alturas vertiginosas, allí donde la piedra está viva. Un símbolo de esperanza. \n\"El Anarquista\": Paredes de hueso, arañas de huesos, mesa de huesos. Todo lo que queda de los enemigos hace décadas olvidados. \n\"La Niebla\": Una Vistana vaga por estas tierras sola. Parece ser quien podría ayudarnos. \"El Jinete\": Acecha en un lugar al cual tiene que volver, un lugar de muerte.",
+    "images": [
+      "images/diary/EVA.png"
+    ]
+  },
+  {
+    "id": "d-5.0",
+    "date": "21 de Sintiavr del 735",
+    "index_label": "21 de Sintiavr, 735",
+    "title": "Morgantha y los pasteles",
+    "body": "En el camino nos encontramos con una extraña anciana llamada Morgantha arrastrando una carretilla. Nos ofreció unos pasteles de carne y acepté a probarlos. Tuve la visión más extraña: estaba con Nathaniel, papá, ¡y mamá! Vivíamos todos juntos en una vida totalmente alejada de la cacería, una vida feliz. ",
     "images": []
   },
   {
@@ -52,7 +141,7 @@
     "date": "23 de Sintiavr del 735",
     "index_label": "23 de Sintiavr, 735",
     "title": "Camino a Kresk",
-    "body": "Escoltamos a Ismark, Ireena y los niños hacia el oeste, buscando el refugio de Kresk. Sin embargo, la comuna se niega a abrir sus puertas a extraños a menos que demostremos que podemos sobrevivir una noche entera a la intemperie en el bosque. La neblina empieza a espesarse a nuestro alrededor.",
+    "body": "Escoltamos a Ismark, Irina y los niños hacia el oeste, buscando el refugio de Kresk. Sin embargo, la comuna se niega a abrir sus puertas a extraños a menos que demostremos que podemos sobrevivir una noche entera a la intemperie en el bosque. La neblina empieza a espesarse a nuestro alrededor.",
     "images": []
   },
   {
@@ -99,8 +188,8 @@
     "id": "d-13",
     "date": "29 de Sintiavr del 735",
     "index_label": "29 de Sintiavr, 735",
-    "title": "El rescate de Ireena",
-    "body": "Volvimos a Vallaki en secreto. Izek había secuestrado a Ireena. Entramos por la fuerza al palacio del burgomaestre, abatimos a Izek, al burgomaestre y a sus mastines. El pueblo cayó en manos del culto de Fiona Wachter. Recuperamos a Ireena y el vestido de novia que Izek guardaba. Nos echaron de la ciudad bajo amenaza de muerte.",
+    "title": "El rescate de Irina",
+    "body": "Volvimos a Vallaki en secreto. Izek había secuestrado a Irina. Entramos por la fuerza al palacio del burgomaestre, abatimos a Izek, al burgomaestre y a sus mastines. El pueblo cayó en manos del culto de Fiona Wachter. Recuperamos a Irina y el vestido de novia que Izek guardaba. Nos echaron de la ciudad bajo amenaza de muerte.",
     "images": []
   },
   {
@@ -108,7 +197,7 @@
     "date": "30 de Sintiavr del 735",
     "index_label": "30 de Sintiavr, 735",
     "title": "La batalla contra el Abad",
-    "body": "Le entregamos el vestido al Abad en la Abadía y llevamos a Ireena hacia el estanque de Kresk. Allí, una voz milenaria emergió del agua llamándola; un rayo cruzó el cielo con la furia de Strahd. Revelamos las monstruosidades del Abad y entablamos una dura batalla contra ese ángel caído. Este lugar no tiene salvación divina.",
+    "body": "Le entregamos el vestido al Abad en la Abadía y llevamos a Irina hacia el estanque de Kresk. Allí, una voz milenaria emergió del agua llamándola; un rayo cruzó el cielo con la furia de Strahd. Revelamos las monstruosidades del Abad y entablamos una dura batalla contra ese ángel caído. Este lugar no tiene salvación divina.",
     "images": []
   },
   {
@@ -180,7 +269,7 @@
     "date": "8 de Octiavr del 735",
     "index_label": "8 de Octiavr, 735",
     "title": "El final de la pesadilla",
-    "body": "El final de la pesadilla. Irrumpimos en el Castillo Ravenloft. Destruí el corazón latente en la torre a flechazos; purgamos las catacumbas de les concubines y recibimos la bendición del espíritu de Sergei. Nathaniel guio la Espada Solar y atravesó a Strahd, obligándolo a replegarse a su ataúd. Corrí hacia su tumba y le clavé la estaca definitiva en el corazón. El conde se desintegró en polvo.\n\nNuestra victoria tuvo un costo sangriento: Ireena murió, pero su alma al fin encontró la paz junto a Sergei. Ajusticiamos a Rahadin. Luego, guiados por el Hollyfante Amadeo y usando los restos sagrados, completamos la lectura de los Salmos del Terror en el Templo Ambarino, aprisionando a Vampyr en el ámbar para siempre.\n\nLas nieblas se han abierto. Barovia vuelve a respirar. Misión cumplida, papá. Volvemos a casa.",
+    "body": "El final de la pesadilla. Irrumpimos en el Castillo Ravenloft. Destruí el corazón latente en la torre a flechazos; purgamos las catacumbas de les concubines y recibimos la bendición del espíritu de Sergei. Nathaniel guio la Espada Solar y atravesó a Strahd, obligándolo a replegarse a su ataúd. Corrí hacia su tumba y le clavé la estaca definitiva en el corazón. El conde se desintegró en polvo.\n\nNuestra victoria tuvo un costo sangriento: Irina murió, pero su alma al fin encontró la paz junto a Sergei. Ajusticiamos a Rahadin. Luego, guiados por el Hollyfante Amadeo y usando los restos sagrados, completamos la lectura de los Salmos del Terror en el Templo Ambarino, aprisionando a Vampyr en el ámbar para siempre.\n\nLas nieblas se han abierto. Barovia vuelve a respirar. Misión cumplida, papá. Volvemos a casa.",
     "images": []
   }
 ]
