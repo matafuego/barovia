@@ -86,8 +86,7 @@
     "images": [
       "images/diary/vallaki.png",
       "images/diary/incendio.png",
-      "images/diary/vargas.png",
-      "images/diary/izek.png"
+      "images/diary/vargas.png"
     ]
   },
   {
@@ -95,45 +94,63 @@
     "date": "21 de Sintiavr del 735",
     "index_label": "21 de Sintiavr, 735",
     "title": "Los elfos del ocaso",
-    "body": "Más tarde nos dirigimos al lago Varatok. Allí salvamos a la pequeña Arabel de morir ahogada en esas aguas heladas a manos de un borracho que la había secuestrado creyendo que tenerla le traería suerte en la pesca. La llevamos de regreso sana y salva al campamento Vistani donde conocimos a su padre Lubash y a su tío Arrigal. Aleksei, quien debía custodiar a la niña, fue castigado con latigazos ante la vista de toda su gente por su descuido. Nos contaron la historia de Patrina, una elfa del ocaso que fue concubina de Strahd y por esa traición fue lapidada. Strahd no dudó en castigarlos por ello, asesinando a todas las mujeres y cortando las orejas de su hermano: Casimiro. La sangre nunca cesa de brotar en estas tierras.",
+    "body": "Más tarde nos dirigimos al lago Varatok. Allí salvamos a la pequeña Arabel de morir ahogada en esas aguas heladas a manos de un borracho que la había secuestrado creyendo que tenerla le traería suerte en la pesca. La llevamos de regreso sana y salva al campamento Vistani donde conocimos a su padre Lubash y a su tío Arrigal. Aleksei, quien debía custodiar a la niña, fue castigado con latigazos ante la vista de toda su gente por su descuido. Nos contaron la historia de Patrina, una elfa del ocaso que fue concubina de Strahd y por esa traición fue lapidada. Strahd no dudó en castigarlos por ello, asesinando a todas las mujeres y cortando las orejas de su hermano: Casimiro. Casimiro nos mencionó al Templo Ambarino, un lugar muy peligroso que podría albergar el secreto de Strahd. Todavía no estamos listos para visitarlo, recién estamos conociendo estas tierras, pero me dio algo de esperanza saber que puede haber un lugar con conocimientos que nos ayuden en nuestra búsqueda. ¿Sabrán algo de Adhara en este Templo? ¿O de nuestro padre?",
     "images": [
       "images/diary/vistanis.png"
     ]
   },
   {
-    "id": "d-5.3",
-    "date": "21 de Sintiavr del 735",
-    "index_label": "21 de Sintiavr, 735",
-    "title": "¿Quién es Antulio?",
-    "body": "Dice que tuvo un sueño sobre nosotros y por eso nos acompaña. Es un clérigo de Pelor, dios del Sol, algo que no se ve en estas tierras, dios de la bondad, algo que escasea también. ¿Qué hace acá con nosotros? En la ataudería desplegó unas enormes alas celestiales. ¿Es un ángel? No parece un ángel. Desconfío de los ángeles. La gente habla de su supuesta bondad y se olvida de que son tan monstruos como cualquier otra criatura así de poderosa. Y bondad puede significar algo muy distinto cuando mirás todo desde arriba. Sin embargo Antulio parece bueno. Muy curioso. ¿Quién es Antulio? Por ahora nuestro compañero. El futuro dirá.",
-    "images": [
-      "images/diary/antulio.png"
-    ]
-  },
-  {
-    "id": "d-5.0",
+    "id": "d-5.4",
     "date": "21 de Sintiavr del 735",
     "index_label": "21 de Sintiavr, 735",
     "title": "La Vidente",
-    "body": "¿Puede alguien saber el futuro? ¿El futuro ya existe? En estas tierras parecen confiar en unas cartas llamadas Taroka. Madame Eva, la líder vistani que mandó por nosotros, vive en unos carromatos junto con su gente en la laguna del Tser, y nos contó lo que veía en estas cartas para nosotros. Cada revelación parecía tanto un presagio como una advertencia. \n\n\"El Paladín\": Habla de un príncipe dorado, un sirviente de la luz y hermano de las sombras. Dice que el tesoro se encuentra junto a él. \n\n\"El Transmutador\": Alturas vertiginosas, allí donde la piedra está viva. Un símbolo de esperanza. \n\n\"El Anarquista\": Paredes de hueso, arañas de huesos, mesa de huesos. Todo lo que queda de los enemigos hace décadas olvidados. \n\n\"La Niebla\": Una Vistana vaga por estas tierras sola. Parece ser quien podría ayudarnos. \"El Jinete\": Acecha en un lugar al cual tiene que volver, un lugar de muerte.",
+    "body": "¿Puede alguien saber el futuro? ¿El futuro ya existe? En estas tierras parecen confiar en unas cartas llamadas Taroka. Madame Eva, la líder vistani que mandó por nosotros, vive en unos carromatos junto con su gente en la laguna del Tser, y nos contó lo que veía en estas cartas para nosotros. Cada revelación parecía tanto un presagio como una advertencia. \n\n\"El Paladín\": Habla de un príncipe dorado, un sirviente de la luz y hermano de las sombras. Dice que el tesoro se encuentra junto a él. \n\n\"El Transmutador\": Alturas vertiginosas, allí donde la piedra está viva. Un símbolo de esperanza. \n\n\"El Anarquista\": Paredes de hueso, arañas de huesos, mesa de huesos. Todo lo que queda de los enemigos hace décadas olvidados. \n\n\"La Niebla\": Una Vistana vaga por estas tierras sola. Parece ser quien podría ayudarnos. \n\n\"El Jinete\": Acecha en un lugar al cual tiene que volver, un lugar de muerte.\n\nMadame Eva se despidió, pero no sin antes decirnos una advertencia a cada uno. Sus palabras aún resuenan en mi cabeza \"¿quién es el cazador y quién es la presa?\"\n\nPor las dudas que esto se vuelva importante más adelante debería registrar lo que la vieja vistana dijo a Nathaniel y Antulio. A mi hermano le dijo: \"Calma hijo, de a uno oscuridad a la vez, luchando contra lo ajeno buscas vences lo propio.\" y a Antulio: \"Antes de destruir al diablo tendrás que destruir al ángel.\"",
     "images": [
       "images/diary/EVA.png"
     ]
   },
   {
-    "id": "d-5.0",
-    "date": "21 de Sintiavr del 735",
-    "index_label": "21 de Sintiavr, 735",
-    "title": "Morgantha y los pasteles",
-    "body": "En el camino nos encontramos con una extraña anciana llamada Morgantha arrastrando una carretilla. Nos ofreció unos pasteles de carne y acepté a probarlos. Tuve la visión más extraña: estaba con Nathaniel, papá, ¡y mamá! Vivíamos todos juntos en una vida totalmente alejada de la cacería, una vida feliz. ",
+    "id": "d-6.0",
+    "date": "22 de Sintiavr del 735",
+    "index_label": "22 de Sintiavr, 735",
+    "title": "La pequeña Getruda",
+    "body": "En Barovia conocimos a María, la madre de Gertruda, una mujer muy perturbada por su hija adolescente, a quien insiste en tratar como una niña. Sin embargo Gertruda parece haberse escapado con rumbo al castillo de Ravenloft ¿Otra víctima de Strahd?",
     "images": []
+  },
+  {
+    "id": "d-5.3",
+    "date": "22 de Sintiavr del 735",
+    "index_label": "22 de Sintiavr, 735",
+    "title": "¿Quién es Antulio?",
+    "body": "Hoy apareció llorando, dice que tuvo un sueño en que una figura religiosa era engullida por la oscuridad. No es el primer sueño que nos cuenta, cuando lo conocimos dijo que tuvo un sueño sobre nosotros y por eso nos acompañaba. Es un clérigo de Pelor, dios del Sol, algo que no se ve en estas tierras, dios de la bondad, algo que escasea también. ¿Qué hace acá con nosotros? En la ataudería desplegó unas enormes alas celestiales. ¿Es un ángel? No parece un ángel. Desconfío de los ángeles. La gente habla de su supuesta bondad y se olvida de que son tan monstruos como cualquier otra criatura así de poderosa. Y bondad puede significar algo muy distinto cuando mirás todo desde arriba. Sin embargo Antulio parece bueno. Muy curioso. Lo he visto invocar ángeles espectrales que destruyen todo a su paso. ¿Quién es Antulio? Por ahora nuestro compañero. El futuro dirá.",
+    "images": [
+      "images/diary/antulio.png"
+    ]
+  },
+  {
+    "id": "d-6.1",
+    "date": "22 de Sintiavr del 735",
+    "index_label": "22 de Sintiavr, 735",
+    "title": "Morgantha y los pasteles",
+    "body": "Camino a Vallaki, por el viejo camino Svalich, nos encontramos con una extraña anciana llamada Morgantha arrastrando una carretilla. Nos ofreció unos pasteles de carne y acepté a probarlos. Tuve la visión más extraña: estaba con Nathaniel, papá, ¡y mamá! Vivíamos todos juntos en una vida totalmente alejada de la cacería, una vida feliz. Me dejó unos pasteles pero huyó haciéndose invisible cuando Nathaniel pateó su carro diciendo que no sabíamos negociar. Algo oscuro vio mi hermano en ella, pero me cuesta saber qué piensa y por qué actúa cómo actúa. En el hospicio no parecen haberle ayudado mucho, pienso a menudo que debería de haberse queda conmigo y con papá.",
+    "images": []
+  },
+  {
+    "id": "d-6.1",
+    "date": "22 de Sintiavr del 735",
+    "index_label": "22 de Sintiavr, 735",
+    "title": "La ausencia del Sol Llameante",
+    "body": "En Vallaki el barón estaba muy enojado con nosotros por no haber estado presentes en la fiesta del Sol Llameante. Aparentemente fue todo un fiasco, la lluvia intervino y nunca pudieron hacer arder los soles de mimbres. Incluso alguien se rió del barón y está siendo castigado en este mismo momento en los cepos de la ciudad. El barón parece estar muy preocupado por la felicidad de su gente, pero sin embargo no parece llegarle a ellos. Le ofrecí uno de los pasteles de Morgantha el cual mandó a uno de sus soldados a probar y nos pidió más. \"Todo va a estar bien.\"\\nVallaki es un lugar distinto a Barovia, entablamos algo parecido a una amistad con un hombre distinto a los otros \"el chino\" le llamamos, y muestra una curiosidad y una energía distinta a la del común de la gente. También hicimos buenas migas con Urwyn Martikov, quien administra la posada del Agua Azul. Nada que ver con ese antro de La Sangre de la Viña en Barovia. Esta posada es administrada por \"El gentil de Vallaki\", un grupo de corvántropos pertenecientes a \"la sociedad de las plumas\" que buscan hacer de esta ciudad un lugar seguro. Monstruos. Velando por la seguridad. Estas tierras no dejan de sorprenderme. Fue la primera vez que escuché un nombre que la gente de estas tierras había reservado para mí: \"El fantasma de Barovia\". Tal vez yo también era un monstruo.",
+    "images": [
+      "images/diary/wereraven.png"
+    ]
   },
   {
     "id": "d-6",
     "date": "22 de Sintiavr del 735",
     "index_label": "22 de Sintiavr, 735",
     "title": "El aquelarre del molino",
-    "body": "Día sangriento. Fuimos al molino a confrontar a Morgantha y a su aquelarre de brujas. La pelea fue feroz, pero logramos liberar a dos niños, Freek y Myrtle, que habían sido vendidos por sus propios padres a cambio de pasteles. La bruja mencionó tu nombre, papá; dijo que te vio partir hacia el castillo. Más tarde en Vallaki, detuvimos una masacre en la ataudería al recuperar los huesos sagrados de San Andral y rescatamos a la pequeña Arabel de morir ahogada en el lago.",
+    "body": "Día sangriento. Fuimos al molino a conversar con Morgantha, pero nos encontramos con que era una bruja y sus supuestas hijas parte de su aquelarre. La pelea fue feroz y fui convertido durante un buen tiempo en un horrible y desagradable sapo. El sabor a mosca aún persiste en mi boca, pero un sabor aún más horrible se hizo presente. Al derrotar a las brujas descubirmos que los pasteles estaban hechos con niños. Toda mi visión, todo ese mundo idílico, sabía que era falso, pero no que era carne de niño. Nathaniel no dice nada, pero siento que me juzga por dentro de su capirote. Al menos logramos liberar a dos niños, Freek y Myrtle, que habían sido vendidos por sus propios padres a cambio de estos pasteles. La bruja mencionó tu nombre, papá, dijo que te vio partir hacia el castillo llevado por un Vistani. Ismark se llevó a los niños hacia Barovia. Espero que estén bien. \"¿Todo va a estar bien?\"",
     "images": []
   },
   {
@@ -141,23 +158,39 @@
     "date": "23 de Sintiavr del 735",
     "index_label": "23 de Sintiavr, 735",
     "title": "Camino a Kresk",
-    "body": "Escoltamos a Ismark, Irina y los niños hacia el oeste, buscando el refugio de Kresk. Sin embargo, la comuna se niega a abrir sus puertas a extraños a menos que demostremos que podemos sobrevivir una noche entera a la intemperie en el bosque. La neblina empieza a espesarse a nuestro alrededor.",
+    "body": "Emprendimos el viaje a Kresk para saber si podrían recibir a Irina en la Abadía de Santa Markovia. Kresk es una ciudad amurallada, con enormes murallas, que parece estar bien preparada para resistir a los males de esta tierra. Sin embargo, la comuna se niega a abrir sus puertas a extraños a menos que demostremos que podemos sobrevivir una noche entera a la intemperie en el bosque. Si fueran los bosques de cada lo haríamos sin dudarlo. En la posada del Agua Azul Zoldar Zoldarovich nos advirtió, la noche aquí fuera de las ciudad es letal. La niebla empieza a espesarse a nuestro alrededor.",
     "images": []
+  },
+  {
+    "id": "d-8",
+    "date": "23 de Sintiavr del 735",
+    "index_label": "23 de Sintiavr, 735",
+    "title": "Una noche en el bosque",
+    "body": "Sobrevivimos a una noche de pesadilla en el bosque. Nos atacaron lobos espectrales en un torbellino, espectros del dolor y una banshee cuyo lamento casi nos destruye. Antulio tiene una conexión con lo divino muy fuerte. Había oído del poder de algunos clérigos de ahuyentar a los muertos, pero sus palabras parecen traer la fuerza del sol. Es bueno que esté con nosotros. En medio de la noche pasó algo muy curioso e igualmente terrorífico, nos adentramos demasiado en la niebla, tanto que la niebla misma nos expulsó, todavía no entiendo si nos perdimos y salimos por el mismo lugar o si la niebla misma se cerró a nuestro paso. Esta tierra confunde demasiado mis sentidos y no puedo confiar en nada de lo que aprendí en mi vida. Al menos no ciegamente. Al amanecer, si es que se puede llamar amanecer, volvimos exhaustos a la muralla y los guardias de Kresk nos permitieron entrar. Conocimos al burgomaestre Dimitri Kreskov y a su esposa Ana. Las campanas de la abadía suenan a cualquier hora y se escuchan gritos y risas. Este pueblo huele a miedo, y a remolachas.",
+    "images": [
+      "images/bestiary/neblilobos.png",
+      "images/bestiary/sorrowsworn.png",
+      "images/bestiary/banshee.png"
+    ]
   },
   {
     "id": "d-8",
     "date": "24 de Sintiavr del 735",
     "index_label": "24 de Sintiavr, 735",
-    "title": "La noche en el bosque",
-    "body": "Sobrevivimos a una noche de pesadilla en el bosque. Nos atacaron neblilobos, espectros del dolor y una banshee cuyo lamento casi nos destruye. Al amanecer, exhaustos y cubiertos de sangre, los guardias de Kresk nos permitieron entrar. Conocimos al burgomaestre Dimitri Kreskov y a su esposa Ana. Este pueblo huele a miedo y remolachas.",
-    "images": []
+    "title": "La abadía de Santa Markovia",
+    "body": "Visitamos la abadía de Santa Markovia. El abad parece no haber envejecido un día desde que llegó, hace ya tantos años. Está claro que es una criatura celestial, pero nadie parece notarlo o molestarse por eso. Recorrimos el cementerio de la abadía y encontramos una tumba decorada con un sol, algo extraño de ver. Por su parte supimos que los clérigos de la abadía se volvieron locos y caníbales y que fue el abad el que restauró la luz en la región. Entiendo un poco más por qué la gente deposita su fe en este monstruo. En la abadía nos recibieron unas criaturas extrañas, mestizos, mezcla de hombres con animales, y de comportamiento errático. El abad nos presentó a Vassilka, un gólem de carne con intención de parecerse a Irina que piensa llevarle a Strahd. Nos pidió un vestido de novia. Volvimos al pueblo alejándonos de esta abadía, de este manicomio.",
+    "images": [
+      "images/diary/tashatomb.png",
+      "images/diary/elabad.jpg",
+      "images/diary/otto.png"
+    ]
   },
   {
     "id": "d-9",
     "date": "25 de Sintiavr del 735",
     "index_label": "25 de Sintiavr, 735",
-    "title": "El Abad y Vassilka",
-    "body": "Ilya, el último hijo de los Kreskov, falleció hoy. Un sujeto llamado el Abad —que vive en la antigua abadía de Santa Markovia— lo resucitó. Pero el muchacho volvió vacío, apático, sin rastro de alma. Descubrimos que el Abad es un ángel caído, un ser desquiciado que profana tumbas para construir una criatura de carne llamada Vassilka. Nos pidió que le consigamos un vestido de novia.",
+    "title": "Vida, muerte, y resurrección",
+    "body": "Ilya, el último hijo de los Kreskov, falleció hoy. Ya habían perdido a sus cuatro primeros hijos. El abad se presentó en el pueblo y lo resucitó. Pero el muchacho volvió distinto. Apático. Vacío. También Antulio ayudó a una familia a traer a su hijo a este mundo, lo llamaron Antulio en su honor. El pequeño Antulio nació sin alma, o eso dijeron. Esta tierra no sólo esta plagada de muerte, también carente de vida.",
     "images": []
   },
   {
@@ -165,111 +198,202 @@
     "date": "26 de Sintiavr del 735",
     "index_label": "26 de Sintiavr, 735",
     "title": "La bodega del Mago de los Vinos",
-    "body": "Dejamos Kresk para investigar por qué se interrumpió el envío de vino desde la bodega del Mago de los Vinos. Nos encontramos con Davian Martikov y su familia de licántropos-cuervo. Aceptamos ayudarlos a limpiar la bodega, tomada por hordas de blights y druidas oscuros que veneran la maldad del valle.",
-    "images": []
+    "body": "Dejamos Kresk para investigar por qué se interrumpió el envío de vino desde la bodega del Mago de los Vinos. Nos encontramos con Davian Martikov, el padre de Urwyn y con quien está peleado hace años. Aceptamos ayudarlos a limpiar su bodega, tomada por hordas de blights y druidas oscuros que veneran la maldad del valle. Conocimos a una extraña mujer llamada Muriel, lleva una máscara de madera y sus manos parecen avejentadas, mucho más de lo que la gracilidad de sus movimientos parecen sugerir. Está buscando unas gemas que ayudaban a la producción de vinos. Nos ofrecemos a ayudarla. ",
+    "images": [
+      "images/diary/martikov.png",
+      "images/bestiary/blights and druids.png"
+    ]
   },
   {
     "id": "d-11",
     "date": "27 de Sintiavr del 735",
     "index_label": "27 de Sintiavr, 735",
     "title": "El Árbol de Gulthias",
-    "body": "Marchamos hacia la Colina de Antaño para cortar la amenaza de raíz. Destruimos el corrupto Árbol de Gulthias a flechazos y conjuros. En medio de la victoria, el cielo se desgarró y Strahd descendió montado en una pesadilla en llamas. Nos miró con desdén y nos recordó que cada hoja, cada criatura y cada gota de sangre en Barovia le pertenecen.",
-    "images": []
+    "body": "Marchamos hacia la Colina de Antaño para cortar la amenaza de raíz. Destruimos el corrupto Árbol de Gulthias, un árbol que nace de una estaca clavada en un vampiro. Una de las gemas desaparecidas estaba dando poder a este árbol. Luego de la victoria, el cielo se desgarró y Strahd descendió montado en una pesadilla en llamas. Nos miró con desdén y nos recordó que cada hoja, cada criatura y cada gota de sangre en Barovia le pertenecen. Y que todo lo que sucede es por su voluntad, y que nos está probando. Pude acertarle una flecha a su montura cuando descendía, pero estoy seguro de que apenas le molestó. Mi hermano encontró un hacha clavada en el árbol que le recuerda el dolor que inflige, o esas fueron sus palabras. Yo encontré una lanza que pertenecía a un antiguo soberano de esta tierra, un tal Cavan. La lanza tiene hambre de sangre recuperada. ¿Era Cavan un vampiro? ¿Esta tierra siempre estuvo maldita por estas criaturas?",
+    "images": [
+      "images/diary/spear.png"
+    ]
   },
   {
     "id": "d-12",
     "date": "28 de Sintiavr del 735",
     "index_label": "28 de Sintiavr, 735",
-    "title": "La invitación de Rahadin",
-    "body": "Llegamos al lago Varatok y encontramos el carro de la cazadora Ezmeralda d'Avenir junto a la Torre de Khazan. La ayudamos a repeler una jauría de hombres lobo. Antes de irse, llegó Rahadin, el lugarteniente de Strahd. Traía una invitación formal para cenar en el castillo y unas páginas arrancadas de tu diario, papá. Escuchar el coro de almas agonizantes que rodea a Rahadin casi me hace perder el juicio.",
-    "images": []
+    "title": "La orden del dragón de plata",
+    "body": "En el camino encontramos un no-muerto, un caballero, peleando contra un enorme lobo. El caballero no se mostró violento con nosotros, más bien todo lo contrario. Era un retornado, de la orden del dragón de plata, fundada por Arginvost, y nos ungió a que busquemos a Vladimir Horngart en Arginvostholt. ¿Qué hacía un dragón de plata en estas tierras? Los dragones son criaturas monstruosas, terribles, sin embargo algunos dicen que los dragones metálicos ayudan a la gente. El retornado por lo pronto no se mostró hostil con nosotros. Algunos monstruos son... ¿humanos? ¿buenos?",
+    "images": [
+      "images/bestiary/retornado.png"
+    ]
+  },
+  {
+    "id": "d-12",
+    "date": "28 de Sintiavr del 735",
+    "index_label": "28 de Sintiavr, 735",
+    "title": "La enviada de la Tarokka",
+    "body": "Llegamos al lago Varatok y encontramos un carromato vistani con un cartel de no acercarse estacionado frente a una torre. En la torre había un grabado que decía KHAZAN y unas indicaciones de algo que parecía ser un baile. Antulio bailó frente a las puertas y estas se abrieron, dándonos acceso a una torre que no tardamos en investigar. Estaba bastante destruída, excepto el último piso que parecía ser el lugar de descanso de algún viajero. Escuchamos unos gritos de afuera y salvamos a una mujer que escapaba de unos hombres lobos. Era Ezmeralda. Perseguimos a los hombres lobo y Nathaniel obtuvo información de uno llamado Gorgash mediante tortura. No termino de entender qué le enseñaron en ese hospicio a mi hermano, temo que se esté convirtiendo en uno de los monstruos que entrenamos para cazar. \n\nVolvimos con Ezmeralda quien nos contó que se había adentrado al castillo de Ravenloft en busca de Strahd pero que no había llegado mucho más allá de una capilla que había en el primer piso. Luego con una palabra mágica hizo aparecer unos caballos espectrales en su carromato y desapareció. No sin antes darnos una cita para más adelante, ella nos encontraría.",
+    "images": [
+      "images/diary/ezmeralda.png",
+      "images/diary/khazan.png"
+    ]
+  },
+  {
+    "id": "d-12.1",
+    "date": "28 de Sintiavr del 735",
+    "index_label": "28 de Sintiavr, 735",
+    "title": "La invitación de Rajadin",
+    "body": "Volvimos a la torre para descansar y nos encontramos con Rajadín, el senescal de Strahd. Traía una invitación formal para cenar en el castillo junto con unas páginas arrancadas del diario de papá. Sigue escribiendo. Sigue vivo. Sin embargo las páginas no son muy alentadoras. Habla de la misma presencia que siento cuando uso mis poderes. ¿Esta yendo a su encuentro? Es lo más cerca que estuvimos de su pista en los últimos meses ¿Dónde estás papá? ",
+    "images": [
+      "images/diary/tower.png",
+      "images/diary/rajadin.png"
+    ]
   },
   {
     "id": "d-13",
     "date": "29 de Sintiavr del 735",
     "index_label": "29 de Sintiavr, 735",
     "title": "El rescate de Irina",
-    "body": "Volvimos a Vallaki en secreto. Izek había secuestrado a Irina. Entramos por la fuerza al palacio del burgomaestre, abatimos a Izek, al burgomaestre y a sus mastines. El pueblo cayó en manos del culto de Fiona Wachter. Recuperamos a Irina y el vestido de novia que Izek guardaba. Nos echaron de la ciudad bajo amenaza de muerte.",
-    "images": []
+    "body": "Volvimos a Vallaki y nos enteramos que el burgomaestre había puesto precio a nuestras cabezas. Un guardia aliado de Fiona Watchter nos permitió el ingreso y confabulamos con ella al enterarnos que Izek había secuestrado a Irina. Entramos por la fuerza al palacio del burgomaestre, abatimos a Izek y Viktor, el hijo del burgomaestre, conjuró una bola de fuego en el salón que incineró a los mastines, Deko y Baviento, y prendió fuego al edificio. La batalla fue feroz y sólo sobrevivió Lidia Petrovna, su mujer. Recuperamos a Irina, pero la ciudad cayó bajo el control de Fiona Watchter. En el fragor del incendio y la batalla que se sucedió fuera del palacio nos enteramos de la muerte de nuestro amigo el chino. El rescate tuvo un sabor amargo. Hicimos un pequeño ritual funeral, los ritos funerarios son importantes, y luego la señora Watchter nos echó de la ciudad. Ella responde a Strahd y si seguíamos en Vallaki se vería obligada a entregarle a Irina. Al alejarnos del poblado las palabrras de Urwyn Martikov resonaban en mi cabeza \"Sólo cambiamos un noble por otro.\" Los monstruos a veces son humanos.",
+    "images": [
+      "images/diary/izek.png",
+      "images/diary/fiona.png"
+    ]
   },
   {
     "id": "d-14",
     "date": "30 de Sintiavr del 735",
     "index_label": "30 de Sintiavr, 735",
     "title": "La batalla contra el Abad",
-    "body": "Le entregamos el vestido al Abad en la Abadía y llevamos a Irina hacia el estanque de Kresk. Allí, una voz milenaria emergió del agua llamándola; un rayo cruzó el cielo con la furia de Strahd. Revelamos las monstruosidades del Abad y entablamos una dura batalla contra ese ángel caído. Este lugar no tiene salvación divina.",
-    "images": []
+    "body": "Fuimos a la abadía de Santa Markovia para confrontar al abad, pero las cosas se precipitaron de una forma inexplicable. El abad le pidió a Nathaniel que se arrodille y este lo hizo, pero diciéndole que estaba completamente loco. Estas palabras hirieron fuerte en el orgullo del abad que dejó caer su máscara de tranquilidad y se mostró como el ángel caído que era. La batalla fue cruenta, Vassilka fue un oponente formidable, tanto o más que ese diablo con cara de ángel. Luego de su muerte los mestizos quedaron libres y huyeron de la abadía. ¿Serán peligrosos? Llevamos a Irina a descansar al estanque de Kresk, a la glorieta del Señor del Amanecer. Allí una voz milenaria emergió del agua llamándola por otro nombre: \"¡Tatiana!, ¡Sergei!\" llegamos a escuchar y un rayo cruzó el cielo con la furia de Strahd. No pasó nada grave, pero Irina está completamente asustada. Los aldeanos nos explicaron que Sergei era el hermano de Strahd, ¿y Tatiana su prometida? ¿Qué relación tiene con Irina?",
+    "images": [
+      "images/diary/abad.png",
+      "images/diary/chapel.png"
+    ]
   },
   {
     "id": "d-15",
     "date": "31 de Sintiavr del 735",
     "index_label": "31 de Sintiavr, 735",
-    "title": "Las ruinas de Argynvostholt",
-    "body": "Exploramos las ruinas de Argynvostholt, la fortaleza de la Orden del Dragón de Plata. El espíritu del dragón y sus caballeros caídos vagan en una agonía eterna. Aprendimos que la única forma de darles descanso es recuperando el cráneo de Argynvost, que yace trofeo en el castillo de Strahd.",
-    "images": []
+    "title": "Las ruinas de Arginvostholt",
+    "body": "Exploramos las ruinas de Arginvostholt, la fortaleza de la Orden del Dragón de Plata. El espíritu del dragón y sus caballeros caídos vagan en una agonía eterna, condenados por su odio a Strahd. Antes que liberarlo de su maldición prefieren que sufra eternamente. ¿Será posible? Arginvost fue decapitado y su cabeza escondida. Aprendimos de una profecía acerca de la recuperación de sus restos, para darles descanso eterno, y luz a la región.",
+    "images": [
+      "images/diary/arginvost.png"
+    ]
   },
   {
     "id": "d-16",
     "date": "1 de Octiavr del 735",
     "index_label": "1 de Octiavr, 735",
-    "title": "La maldición de Nathaniel",
-    "body": "Cazamos a la manada de hombres lobo en su cueva. Tras abatirlos, la luna llena emergió y la maldición se apoderó de Nathaniel. Tuve que golpear a mi propio hermano hasta dejarlo inconsciente para evitar que la bestia lo consumiera. Logramos curarlo a tiempo. De regreso, atrapamos y eliminamos al vampiro saltarín Haoyu Li, dándole un funeral digno de su lejana tierra.",
-    "images": []
+    "title": "¡Maldiciones!",
+    "body": "Cazamos a la manada de hombres lobo en su propia cueva. Tras derrotarlos, y justo cuando el muro de fuego que había conjurado Antulio comenzó a extinguirse, la luna llena asomó en el cielo y la maldición de la licantropía se apoderó de Nathaniel. Tuve que golpear a mi propio hermano hasta dejarlo inconsciente para evitar que la bestia lo consumiera. Llevaba días temiendo que su propia oscuridad interior se lo llevara, y terminó siendo esta estúpida maldición la que casi lo convierte en un monstruo. \n\nPor si fuera poco, Antulio y yo quedamos malditos tras quedarnos con unos objetos que pertenecían a los hombres lobo. Por suerte, el padre Lucian supo guiarnos y ayudarnos a purgar esas maldiciones.",
+    "images": [
+      "images/diary/zulleika.jpg"
+    ]
+  },
+  {
+    "id": "d-16",
+    "date": "2 de Octiavr del 735",
+    "index_label": "2 de Octiavr, 735",
+    "title": "El vampiro saltarín",
+    "body": "Supimos de un extraño no muerto que estaba levantando a los muertos y causando estragos en Vallaki, aunque algunos ahora la llaman Villa Watchter. Enorme fue nuestro horror al enterarnos de que nuestro amigo el chino se había alzado entre los muertos como un vampiro saltarín. Una criatura de la que definitivamente nunca habíamos oído. En su casa encontramos una carta en la que explicaba que él no era de esta tierra sino de una llamada I'Cath, de donde había sido ¿rescatado? por su familia, al permitírsele venir a Barovia. ¿Qué angustiosa tierra abriga a la familia de nuestro amigo que Barovia fue un alivio para ellos? Afortundamente describía los ritos funerarios de allí, consciente de que su alma jamás encontraría reposo si no se respetaban. Los ritos funerarios son importantes. Los ritos funerarios correctos son más importantes. Haoyu Li, amigo, que tu alma descanse en paz. Aunque sé que tu espíritu estará siempre presente con nosotros, guiándonos cuando más lo necesitemos.",
+    "images": [
+      "images/bestiary/jiangshi.png",
+      "images/diary/funeral.jpg"
+    ]
   },
   {
     "id": "d-17",
-    "date": "2 de Octiavr del 735",
-    "index_label": "2 de Octiavr, 735",
+    "date": "3 de Octiavr del 735",
+    "index_label": "3 de Octiavr, 735",
     "title": "La cena en el Castillo Ravenloft",
-    "body": "La cena en el Castillo Ravenloft. Cenamos rodeados de lujo maquiavélico y cortesanos chupasangre. Strahd nos habló con una calma aterradora; le ofreció a Nathaniel ser su sucesor. Luego nos entregó el decreto de destierro de Adhara y confesó que te tenía encerrado, papá. Nos ofreció dar marcha atrás o ir a buscarte. Sabíamos que era una trampa, pero el rastro estaba marcado.",
-    "images": []
+    "body": "Una enorme carroza negra nos vino a buscar para llevarnos al castillo. Cenamos rodeados de lujo maquiavélico y cortesanos chupasangre. Getruda, la hija de María, estaba en la cena, completamente embelesada por el diablo. Strahd nos habló con una calma aterradora. Estuvo jugando toda la cena con nosotros como un león juega con una gacela herida. Le ofreció a Nathaniel ser su sucesor. Lo que pasó con Volenta, una de sus concubinas, no puedo ni escribirlo en este diario. El alcohol y mis pasiones me desbordaron. Luego nos entregó el decreto de destierro de Adhara, desterrada por su madre debido a su apego malsano a Strahd y sus prácticas oscuras. Luego confesó que tenía encerrado a papá y que lo liberó indicándole dónde estaba la bruja un tiempo antes de que lleguemos al castillo. Dice que papá no quería que nosotros fuéramos y nos ofrece esperarlo. Es un cínico. Un sádico. Nada de esto importa, tomamos los caballos que nos ofrece y partimos a toda velocidad hacia Beres. Sabíamos que era una trampa, pero el rastro estaba marcado.",
+    "images": [
+      "images/diary/carruaje.png",
+      "images/diary/concubines.png",
+      "images/diary/menu.png"
+    ]
   },
   {
     "id": "d-18",
-    "date": "3 de Octiavr del 735",
-    "index_label": "3 de Octiavr, 735",
-    "title": "La huida del castillo",
-    "body": "Escapamos de las garras del castillo y nos refugiamos temporalmente en las afueras con Ezmeralda para planear el siguiente paso. La sombra de Adhara y el destino de nuestro padre nos consumen.",
-    "images": []
-  },
-  {
-    "id": "d-19",
     "date": "4 de Octiavr del 735",
     "index_label": "4 de Octiavr, 735",
-    "title": "Berez y el reencuentro con papá",
-    "body": "Llegamos a las ruinas sumergidas de Berez. Nos enfrentamos a la bruja Adhara y a su casa flotante. Y entonces apareciste tú, papá... Convertido en un no muerto, un revenant consumido por el deseo de venganza. Nathaniel te abrazó entre lágrimas y yo no pude sostener la mirada. Luchaste a nuestro lado una última vez antes de descansar para siempre. Nos dejaste tus armas. Te quemamos con sal y fuego como nos enseñaste. Adiós, papá.",
-    "images": []
+    "title": "Adhara y el reencuentro con papá",
+    "body": "Llegamos a las ruinas sumergidas de Beres. Un poblado entero destruído, inundado, por la furia de Strahd. Obsesionado con Marina, otra Irina, otra Tatiana. Los habitantes de Beres la mataron para salvarla y fueron castigados. Nos enfrentamos a la bruja Adhara y a su casa voladora. Una pelea desigual, muy fuera de nuestro alcance, y entonces apareciste tú papá... Convertido en un no muerto, un retornado consumido por el deseo de venganza, para inclinar la balanza. Nathaniel te abrazó entre lágrimas y yo no pude sostenerte la mirada. Luchaste a nuestro lado una última vez antes de descansar para siempre. Nos dejaste tus armas. Te quemamos con sal y fuego como nos enseñaste. Adiós, papá. Que tu alma descanse en paz junto a la de mamá.",
+    "images": [
+      "images/bestiary/Adhara.png"
+    ]
   },
   {
     "id": "d-20",
     "date": "5 de Octiavr del 735",
     "index_label": "5 de Octiavr, 735",
     "title": "El Paso de Tsolenka",
-    "body": "Con el corazón roto y guiados por Kasimiro, iniciamos el gélido ascenso por el Paso de Tsolenka hacia las montañas. El viento helado nos azota el rostro, pero el dolor interno es mucho peor. Vamos en busca de las respuestas finales.",
-    "images": []
+    "body": "Con el corazón roto y guiados por Casimiro, iniciamos el gélido ascenso por el Paso de Tsolenka hacia las montañas. El viento helado nos azota el rostro, pero el dolor interno es mucho peor. Empujados por nuestro deseo de conocer más a nuestro enemigo. Había jugado con nosotros. Había jugado con papá. Era hora de cortar las cuerdas del titiritero.",
+    "images": [
+      "images/diary/tsolenka.png",
+      "images/diary/bridgeimage.png"
+    ]
   },
   {
     "id": "d-21",
     "date": "6 de Octiavr del 735",
     "index_label": "6 de Octiavr, 735",
     "title": "El Templo Ambarino",
-    "body": "El Templo Ambarino. Un mausoleo de conocimiento prohibido y entidades oscuras atrapadas en bloques de ámbar. Combatimos contra calaveras llameantes y exploramos sus pasillos olvidados junto al Lich Exethanter. Antulio, desesperado por salvarnos, aceptó el regalo oscuro de Zhudun, adquiriendo el aspecto de un cadáver pero ganando el poder de desafiar a la muerte. Comprendimos la verdad: Strahd está atado al Poder Oscuro llamado Vampyr. Para liberarnos, hay que cortar ese vínculo.",
-    "images": []
+    "body": "Llegamos al Templo Ambarino, un mausoleo de conocimiento prohibido y entidades oscuras atrapadas en bloques de ámbar. Nada más entrar combatimos contra calaveras llameantes, los grotescos restos de los antiguos magos que construyeron este lugar. Encontramos a Exethanter, un lich que había perdido por completo la memoria. Logramos hacerle recordar quién era y nos reveló la trágica historia del templo.\n\nComprendimos entonces la terrible verdad: Strahd llegó a este templo buscando inmortalidad, movido por sus propias obsesiones mortales. Forjó un pacto nefasto sellado con la sangre de su hermano Sergei. Pero los Poderes Oscuros lo engañaron: le dieron el poder que deseaba, pero convirtieron esta tierra en su prisión. Strahd es la oscuridad misma que sostiene este templo y controla hasta el clima del valle, pero no es más que un sirviente atado al Poder Oscuro llamado Vampyr. Las almas de todos los que mueren en Barovia terminan alimentando a esa entidad. Por eso, la muerte no lo liberará de su pacto: para salvar Barovia hay que cortar el vínculo directamente con Vampyr.\n\nPor su parte, Casimiro tenía un motivo oculto para guiarnos hasta aquí: su hermana Patrina se le aparecía en sueños señalándole uno de los sarcófagos. Movido por la curiosidad, Antulio ya había tocado un sarcófago antes y rechazó la oferta oscura que recibió. Sin embargo, al acercarse al sarcófago de Patrina por Casimiro, algo cambió radicalmente en él. Antulio aceptó el don oscuro de Zhudun, que le otorga el poder de resucitar a los muertos antiguos. El precio fue espantoso: regresó transformado visualmente en un no muerto, con el aspecto de un cadáver ambulante. No está muerto, pero lleva la marca de la tumba en su propia carne.\n\n No todo fue oscuridad en nuestra visita al templo. En un enfrentamiento contra unos retoños vampíricos Antulio invocó su magia y conjuró un verdadero amanecer... ¡un sol resplandeciente en el corazón del templo! Era la primera vez que veíamos un sol desde nuestra llegada a Barovia. Si bien sabemos que es una manifestación mágica del sol no deja de ser una luz de esperanza en esta tierra sombría, más aún sabiendo todo lo que se avecina.",
+    "images": [
+      "images/diary/temploambarino.png",
+      "images/diary/ambar.png",
+      "images/diary/exethanther.png",
+      "images/diary/sunrise.png"
+    ]
   },
   {
     "id": "d-22",
     "date": "7 de Octiavr del 735",
     "index_label": "7 de Octiavr, 735",
-    "title": "Los preparativos finales",
-    "body": "Descendimos de la montaña y atravesamos Vallaki por última vez. Reunimos suministros, flechas de plata y la sal necesaria para el gran ritual. Intimidados por nuestra determinación, los guardias no se atrevieron a frenarnos. Los caballeros de Argynvost y las pocas fuerzas aliadas están listos. Mañana marchamos al castillo.",
+    "title": "La Reina Cuervo",
+    "body": "Plumas negras. Un cuerpo femenino cubierto por un plumaje de cuervos y una máscara de marfil sin rasgos, desde donde nos observaban dos incandescentes ojos rojos.\n\nDe pronto, una visión se apoderó de mi mente: presenciamos nuestro propio nacimiento. Vimos a nuestra madre, Melania, muerta en la cama, y a nuestro padre, Eric, consumido por una ira y una angustia desgarradoras. Una vida que nace exige una deuda que saldar. En la penumbra, el llanto de dos niños resonaba en la habitación... uno de ellos extremadamente pálido.\n\nLa angustia y la desesperación nos oprimían el pecho, pero entre el remolino de plumas de cuervo, ese sensual cuerpo femenino nos llamaba. La entidad tras la máscara de marfil nos convocaba. Se presentó como la deidad que garantiza el pasaje sagrado de las almas desde la vida hacia la muerte.\n\nY entonces, su voz retumbó en lo profundo de nuestro ser:\n\n—¿Serás mi campeón? No te estoy dando a alguien a quien adorar. Le estoy poniendo un nombre a algo que ya eres.\n\nRespondimos que sí. Tenemos las alianzas de nuestros padres. Nathaniel la de Melania y yo la de Eric. Y podemos compartir nuestras emociones. Por primera vez en mi vida siento lo que siente mi hermano. Y a veces es bueno, pero a veces...\n\nLas fuerzas de Strahd están sitiando Kresk, es el momento de adentrarnos en el castillo, es nuestro momento de cazar.",
     "images": []
   },
   {
     "id": "d-23",
     "date": "8 de Octiavr del 735",
     "index_label": "8 de Octiavr, 735",
-    "title": "El final de la pesadilla",
-    "body": "El final de la pesadilla. Irrumpimos en el Castillo Ravenloft. Destruí el corazón latente en la torre a flechazos; purgamos las catacumbas de les concubines y recibimos la bendición del espíritu de Sergei. Nathaniel guio la Espada Solar y atravesó a Strahd, obligándolo a replegarse a su ataúd. Corrí hacia su tumba y le clavé la estaca definitiva en el corazón. El conde se desintegró en polvo.\n\nNuestra victoria tuvo un costo sangriento: Irina murió, pero su alma al fin encontró la paz junto a Sergei. Ajusticiamos a Rahadin. Luego, guiados por el Hollyfante Amadeo y usando los restos sagrados, completamos la lectura de los Salmos del Terror en el Templo Ambarino, aprisionando a Vampyr en el ámbar para siempre.\n\nLas nieblas se han abierto. Barovia vuelve a respirar. Misión cumplida, papá. Volvemos a casa.",
+    "title": "Amanecer en Barovia",
+    "body": "El final de la pesadilla. Irrumpimos en el Castillo Ravenloft junto con Ezmeralda. El castillo es enorme y podría dedicar todas las páginas de este diario a describir todas las horrendas criaturas y habitaciones que nos encontramos. Todo lo que nos había anticipado la Tarokka ocurrió aquí: encontramos un amuleto de un dios solar en lo más alto de una de las torres, una espada solar en una habitación repleta de huesos, de donde también rescatamos el cráneo de Arginvost para entregarle a los retornados que se encontraban en las puertas del castillo.\n\nLo más importante ocurrió en las criptas en donde nos enfrentamos a les concubines de Strahd. Volenta se mostraba particularmente interesada en mí después de nuestro \"encuentro\" anterior. Encontramos la tumba de Sergei y se nos apareció su espíritu pidiéndonos confesión y diciendo que no es el lugar de los muertos juzgar a los vivos. Con su bendición nos enfrentamos al Diablo Strahd en su morada. La pelea fue desigual, si se puede decir pelea, en su castillo Strahd es capaz de moverse atravesando paredes y haciéndose invisible. Mis habilidades con el arco y en el conocimiento de los muertos, si bien habían sido extremadamente necesarias hasta este momento, se mostraron totalmente inútiles. Fue mi hermano quien puedo encontrarlo y con ayuda de la Espada Solar, esa misma espada que antes había empuñado Sergei, atravesó a Strahd, obligándolo a replegarse a su ataúd. Corrí hacia su tumba y coloqué la estaca definitiva en su corazón, listo para terminar con su existencia. Acto que fue interrumpido por Rajadin que traía a Irina de los pelos, dispuesto a asesinarla si no deponíamos las armas. Irina nos gritó que prefería la muerte a seguir condenada a esta vida eterna con el conde, sus ojos decían mucho más que sus palabras. Hundí la estaca en el corazón de Strahd en el mismo momento en el que la hoja de Rajadín cortaba el cuello de Irina. El conde se desintegró en polvo.Irina murió en el acto. El combate con un Rajadín deshauciado y de ojos llorosos no merece la pena mayor detalle..\n\nLas nieblas se han abierto. Barovia vuelve a respirar. ¿Pero hasta cuándo?",
+    "images": [
+      "images/diary/ravenloft.png",
+      "images/diary/KIBA.png"
+    ]
+  },
+  {
+    "id": "d-24",
+    "date": "9 de Octiavr del 735",
+    "index_label": "9 de Octiavr, 735",
+    "title": "Los Salmos del Terror",
+    "body": "Con el amanecer y en las afueras del castillo Muriel junto con unas extrañas criaturas, aliadas de la Reina Cuervo, nos estaban esperando. Querían contarnos que nada estaba terminado aún y explicarnos del pacto de Strahd, pero nuestras palabras fueron más veloces: ¿Cómo derrotamos a Vampyr? Si esto los sorprendió o no no lo sé decir, con sus ancianos rostros cubiertos por máscaras, pero sí nos informaron del ritual y de los Salmos del Terror. Podemos irnos, las fronteras de Barovia están abiertas, o quedarnos para realizar el ritual y liberar a las almas atrapadas por Vampyr. No hizo falta hacer la pregunta. Todavía quedaba una última misión por cumplir: sal, huesos de un santo, sangre de un ser malvado, y un enorme bloque de ámbar para encerrarlo. No va a ser fácil, pero estamos acostumbrados a tareas imposibles.",
     "images": []
+  },
+  {
+    "id": "d-25",
+    "date": "9 de Octiavr del 735",
+    "index_label": "9 de Octiavr, 735",
+    "title": "El abrazo de la niebla",
+    "body": "Visitamos a Madame Eva quien nos confesó su historia. No puedo escribirla aquí porque juramos mantener el secreto. Luego de esta conversación quedé a solas con ella y le pregunté por el don de caminar entre las nieblas. Había escuchado que era un poder de su gente. Me advirtió que nunca tendría descanso, que las nieblas siempre me perseguirían, y que mi destino estaría atado a vagar por estas tierras oscuras. Todo eso ya lo sabía, pero si con mis conocimientos y mis habilidades podía alivianar la vida de las personas que sufrían por estos poderes, entonces esa era la vida que elegía vivir. La vida para la que entrené desde siempre. La vida para la que me preparó papá. Y después de rescatar su alma de las garras de Vampyr quería hacer que se sienta orgulloso del hijo que había críado.",
+    "images": []
+  },
+  {
+    "id": "d-26",
+    "date": "12 de Octiavr del 735",
+    "index_label": "12 de Octiavr, 735",
+    "title": "Preparativos finales",
+    "body": "Conseguimos todo lo que necesitamos. Los huesos de San Andral, suficiente sal de todos los pueblos de la región, incluso Fiona Watchter se entregó ofreciendo su sangre a cambio de poder escapar con vida. No es una idea que me seducela de dejarla huir, pero no somos guardianes de la ley de esta región, y Vallaki decidió formar su propio gobierno con su partida.Los retornados aceptaron proteger el lugar del ritual, y Antulio se contactó con una curiosa criatura de los planos, un pequeño elefante dorado volador, que nos ayudó a llevar uno de los bloques de ámbar del templo al círculo de piedras en Beres. Un lugar muy apropiado para realizar este ritual. Todo esta listo. Mañana es el día. Debo seguir memorizando los salmos, no podemos fallar, las almas de toda Barovia, de nuestro padre, y las nuestras, están en juego.",
+    "images": ["images/diary/stones.png"]
+  },
+  {
+    "id": "d-23",
+    "date": "14 de Octiavr del 735",
+    "index_label": "14 de Octiavr, 735",
+    "title": "El confinamiento de Vampyr",
+    "body": "Me tiemblan las manos todavía al escribir esto. No puedo entender cómo logramos recitar los salmos a la perfección entre tanto ataque de la niebla y de los retoños vampíricos que se materializaban en el círculo de sal. El aspecto de Vampyr que se formó era una enorme criatura formada de oscuridad y maldad. Y Nathaniel era todo lo contrario. Una bola de luz. Un pequeño sol. Un rayo de esperanza. Entre ellos dos se libró esta batalla eterna entre el bien y el mal. Mi hermano es bueno. Siempre lo supe. Sólo tenía que saberlo él. Antulio y yo nos mantuvimos un poco más al márgen, ayudando, asistiendo, controlando. Vampyr fue encerrado en el ataúd de ámbar, el último golpe fue con una de mis flechas, pero eso es anecdótico, Nathaniel y la espada solar de Sergei fueron quiénes hicieron todo el trabajo. El sol brilla nuevamente en Barovia. La tierra está cambiada. Incluso algunas personas han desaparecido, ya sea porque temen represalias o porque se trataba de creaciones de la mente enferma de Strahd. El sol brilla nuevamente en Barovia. Es tiempo de un nuevo comienzo.",
+    "images": ["images/bestiary/vampyr.png"]
   }
 ]
