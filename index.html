@@ -331,6 +331,14 @@
   }
   .beast-index-name-link:hover { color: var(--ink); border-color: var(--rust); }
 
+  .diary-index-list { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+  .diary-index-name-link { display: flex; flex-direction: column; gap: 2px; }
+  .diary-index-entry-date {
+    font-family: 'Cinzel', serif; font-size: 10px; letter-spacing: 0.15em;
+    text-transform: uppercase; color: var(--ink-soft);
+  }
+  .diary-index-entry-title { font-family: 'Caveat', cursive; font-size: 1.2rem; }
+
   .entry-nav-index-link {
     background: none;
     border: none;
@@ -476,7 +484,10 @@
           <span class="entry-nav-date" id="diaryPrevDate"></span>
         </span>
       </button>
-      <div class="entry-nav-counter" id="diaryCounter"></div>
+      <button class="entry-nav-index-link" id="diaryIndexLink">
+        <span class="entry-nav-index-label">Índice</span>
+        <span class="entry-nav-index-count" id="diaryIndexCount"></span>
+      </button>
       <button class="entry-nav-link next" id="diaryNext">
         <span class="entry-nav-label">
           <span class="entry-nav-caption">Siguiente</span>
@@ -523,12 +534,15 @@
 <script>
 (function(){
   var entryEl = document.getElementById('diaryEntry');
-  var counterEl = document.getElementById('diaryCounter');
   var prevBtn = document.getElementById('diaryPrev');
   var nextBtn = document.getElementById('diaryNext');
   var prevDateEl = document.getElementById('diaryPrevDate');
   var nextDateEl = document.getElementById('diaryNextDate');
+  var indexLinkBtn = document.getElementById('diaryIndexLink');
+  var indexCountEl = document.getElementById('diaryIndexCount');
   var entries = [];
+  // pages[0] is the index; pages[1..] map to entries[0..]
+  var pages = [];
   var current = 0;
 
   function imageBlock(src, alt){
@@ -551,8 +565,31 @@
     return [];
   }
 
-  function render(){
-    var e = entries[current];
+  // pages[pageIdx] is 0 for the index page, or entryIndex+1 for an entry page.
+  function labelFor(pageIdx){
+    var p = pages[pageIdx];
+    return p === 0 ? 'Índice' : entries[p - 1].index_label;
+  }
+
+  function renderIndexPage(){
+    var html = '<div class="beast-index-list diary-index-list">';
+    entries.forEach(function(e, i){
+      html += '<a href="#diary" class="beast-index-name-link diary-index-name-link" data-entry="' + i + '">' +
+        '<span class="diary-index-entry-date">' + e.date + '</span>' +
+        '<span class="diary-index-entry-title">' + e.title + '</span>' +
+      '</a>';
+    });
+    html += '</div>';
+    entryEl.innerHTML = html;
+    entryEl.querySelectorAll('.diary-index-name-link').forEach(function(link){
+      link.addEventListener('click', function(evt){
+        evt.preventDefault();
+        go(parseInt(link.getAttribute('data-entry'), 10) + 1);
+      });
+    });
+  }
+
+  function renderEntryPage(e){
     var textHtml =
       '<p class="entry-date">' + e.date + '</p>' +
       '<h3 class="entry-title">' + e.title + '</h3>' +
@@ -570,26 +607,38 @@
     } else {
       entryEl.innerHTML = '<div class="entry-text">' + textHtml + '</div>';
     }
-    counterEl.textContent = (current + 1) + ' / ' + entries.length;
+  }
+
+  function render(){
+    var page = pages[current];
+    if (page === 0) {
+      renderIndexPage();
+      indexCountEl.textContent = '';
+    } else {
+      renderEntryPage(entries[page - 1]);
+      indexCountEl.textContent = page + ' / ' + entries.length;
+    }
+
+    indexLinkBtn.disabled = (current === 0);
 
     if (current > 0) {
       prevBtn.disabled = false;
-      prevDateEl.textContent = entries[current - 1].index_label;
+      prevDateEl.textContent = labelFor(current - 1);
     } else {
       prevBtn.disabled = true;
       prevDateEl.textContent = '';
     }
-    if (current < entries.length - 1) {
+    if (current < pages.length - 1) {
       nextBtn.disabled = false;
-      nextDateEl.textContent = entries[current + 1].index_label;
+      nextDateEl.textContent = labelFor(current + 1);
     } else {
       nextBtn.disabled = true;
       nextDateEl.textContent = '';
     }
   }
-  function go(i){
-    if (i < 0 || i >= entries.length) return;
-    current = i;
+  function go(pageIdx){
+    if (pageIdx < 0 || pageIdx >= pages.length) return;
+    current = pageIdx;
     render();
   }
 
@@ -600,8 +649,11 @@
     })
     .then(function(data){
       entries = data;
+      pages = [0];
+      entries.forEach(function(e, i){ pages.push(i + 1); });
       prevBtn.addEventListener('click', function(){ go(current - 1); });
       nextBtn.addEventListener('click', function(){ go(current + 1); });
+      indexLinkBtn.addEventListener('click', function(){ go(0); });
       render();
     })
     .catch(function(err){
@@ -796,7 +848,7 @@
 })();
 </script>
 
-<footer>Barovia — a comic</footer>
+<footer>La maldición de Strahd</footer>
 
 <script>
 (function(){
