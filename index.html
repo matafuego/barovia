@@ -867,19 +867,38 @@
     slides.forEach(function(s, i){
       var div = document.createElement('div');
       div.className = 'slide' + (i === 0 ? ' active' : '');
-      div.innerHTML = '<img src="' + s.img + '" alt="' + s.title + '" style="width:100%;height:100%;object-fit:contain;background:#0c0a09;">';
+      // Full-size image is loaded on demand (see loadSlideImage) rather than
+      // all at once, to avoid firing every request on page load.
+      div.innerHTML = '<img data-src="' + s.img + '" alt="' + s.title + '" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:contain;background:#0c0a09;">';
       frame.insertBefore(div, frame.querySelector('.vignette'));
 
       var thumb = document.createElement('button');
       thumb.className = 'thumb' + (i === 0 ? ' active' : '');
       thumb.setAttribute('aria-label', 'Go to image ' + (i+1));
-      thumb.innerHTML = '<img src="' + s.img + '" alt="">';
+      thumb.innerHTML = '<img src="' + s.img + '" alt="" loading="lazy" decoding="async">';
       thumb.addEventListener('click', function(){ go(i); });
       thumbsWrap.appendChild(thumb);
     });
   }
 
+  // Assigns the real src the first time a slide is needed, so only the
+  // slides actually viewed (plus one neighbor each way, for snappy
+  // prev/next) ever get downloaded.
+  function loadSlideImage(i){
+    if (i < 0 || i >= slides.length) return;
+    var el = document.querySelectorAll('.slide')[i];
+    var img = el && el.querySelector('img');
+    if (img && img.dataset.src) {
+      img.src = img.dataset.src;
+      delete img.dataset.src;
+    }
+  }
+
   function render(){
+    loadSlideImage(current);
+    loadSlideImage((current + 1) % slides.length);
+    loadSlideImage((current - 1 + slides.length) % slides.length);
+
     document.querySelectorAll('.slide').forEach(function(el, i){
       el.classList.toggle('active', i === current);
     });
