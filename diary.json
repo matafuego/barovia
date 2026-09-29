@@ -346,6 +346,14 @@
     ]
   },
   {
+    "id": "d-21.1",
+    "date": "7 de Octiavr del 735",
+    "index_label": "7 de Octiavr, 735",
+    "title": "El secreto de Strahd",
+    "body": "Mañana marchamos al Castillo Ravenloft. Las fuerzas de Strahd sitian Kresk y no nos queda más tiempo. Si caemos en el castillo, si no volvemos, si alguien encuentra este diario en estas tierras heladas, necesita saber la verdad. Necesita saber qué es realmente Strahd von Zarovich y por qué matar su cuerpo no bastará para salvar Barovia.\n\nPapá siempre decía que para cazar a un monstruo hay que entender su naturaleza. Strahd no nació vampiro, ni fue infectado por una mordedura. Era un hombre de guerra, un tirano mortal obsesionado con la juventud, el control y el amor no correspondido de Tatiana, la prometida de su hermano Sergei. Su desesperación lo trajo hasta las profundidades del Templo Ambarino.\n\nAllí forjó un pacto sangriento con una entidad primordial atada al ámbar: Vampyr, uno de los Poderes Oscuros del Shadowfell. Para sellar el pacto y obtener la inmortalidad que ansiaba, Strahd asesinó a su propio hermano Sergei y bebió su sangre. Pero los Poderes Oscuros no otorgan regalos sin cobrar un precio eterno. Le dieron el poder que deseaba, pero convirtieron Barovia en su prisión personal y a él en su prisionero de honor.\n\nEste es el secreto que el lich Exethanter nos reveló y que debo dejar asentado:\n\n1. Strahd no es el verdadero amo de este dominio, es su ancla y su títere. Es la oscuridad que sostiene este plano de bolsillo, controla el clima, la niebla y las bestias del valle, pero está atado a la voluntad de Vampyr.\n2. Matar a Strahd no rompe la maldición. Si atravesamos su corazón y destruimos su forma física, su alma permanece atada a Vampyr. Las nieblas se cerrarán de nuevo y, con el tiempo, el Poder Oscuro lo reformará para continuar su tormento eterno.\n3. Las almas de Barovia alimentan a la criatura. Todas las almas de quienes mueren en este valle quedan atrapadas en la bruma y terminan alimentando la fuerza de Vampyr.\n4. Para liberar realmente a Barovia hay que cortar el vínculo con Vampyr. No alcanza con destruir al conde. Hay que realizar el ritual para aprisionar o desterrar a la Entidad Oscura que habita en el ámbar.\n\nSi no regresamos de las criptas del castillo, que quien lea esto en el futuro no celebre una victoria sobre el conde como una victoria definitiva. La verdadera batalla está en el ámbar.\n\nNathaniel está en silencio, Antulio también. Que la luz nos acompañe mañana.",
+    "images": []
+  },
+  {
     "id": "d-22",
     "date": "7 de Octiavr del 735",
     "index_label": "7 de Octiavr, 735",
@@ -386,7 +394,9 @@
     "index_label": "12 de Octiavr, 735",
     "title": "Preparativos finales",
     "body": "Conseguimos todo lo que necesitamos. Los huesos de San Andral, suficiente sal de todos los pueblos de la región, incluso Fiona Watchter se entregó ofreciendo su sangre a cambio de poder escapar con vida. No es una idea que me seducela de dejarla huir, pero no somos guardianes de la ley de esta región, y Vallaki decidió formar su propio gobierno con su partida.Los retornados aceptaron proteger el lugar del ritual, y Antulio se contactó con una curiosa criatura de los planos, un pequeño elefante dorado volador, que nos ayudó a llevar uno de los bloques de ámbar del templo al círculo de piedras en Beres. Un lugar muy apropiado para realizar este ritual. Todo esta listo. Mañana es el día. Debo seguir memorizando los salmos, no podemos fallar, las almas de toda Barovia, de nuestro padre, y las nuestras, están en juego.",
-    "images": ["images/diary/stones.png"]
+    "images": [
+      "images/diary/stones.png"
+    ]
   },
   {
     "id": "d-23",
@@ -394,6 +404,8 @@
     "index_label": "14 de Octiavr, 735",
     "title": "El confinamiento de Vampyr",
     "body": "Me tiemblan las manos todavía al escribir esto. No puedo entender cómo logramos recitar los salmos a la perfección entre tanto ataque de la niebla y de los retoños vampíricos que se materializaban en el círculo de sal. El aspecto de Vampyr que se formó era una enorme criatura formada de oscuridad y maldad. Y Nathaniel era todo lo contrario. Una bola de luz. Un pequeño sol. Un rayo de esperanza. Entre ellos dos se libró esta batalla eterna entre el bien y el mal. Mi hermano es bueno. Siempre lo supe. Sólo tenía que saberlo él. Antulio y yo nos mantuvimos un poco más al márgen, ayudando, asistiendo, controlando. Vampyr fue encerrado en el ataúd de ámbar, el último golpe fue con una de mis flechas, pero eso es anecdótico, Nathaniel y la espada solar de Sergei fueron quiénes hicieron todo el trabajo. El sol brilla nuevamente en Barovia. La tierra está cambiada. Incluso algunas personas han desaparecido, ya sea porque temen represalias o porque se trataba de creaciones de la mente enferma de Strahd. El sol brilla nuevamente en Barovia. Es tiempo de un nuevo comienzo.",
-    "images": ["images/bestiary/vampyr.png"]
+    "images": [
+      "images/bestiary/vampyr.png"
+    ]
   }
 ]
