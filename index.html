@@ -376,6 +376,7 @@
     margin: 0 0 36px;
   }
   .epi-tab {
+    display: block;
     background: none;
     border: 1px solid var(--gold-dim);
     color: var(--fog);
@@ -383,16 +384,18 @@
     font-size: clamp(11px, 1.6vw, 13px);
     letter-spacing: 0.1em;
     padding: 10px 20px;
-    cursor: pointer;
+    text-decoration: none;
     transition: background .2s ease, color .2s ease, border-color .2s ease;
   }
   .epi-tab:hover { color: var(--gold); border-color: var(--gold); }
+  .epi-tab:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
   .epi-tab.active { color: var(--void); background: var(--gold); border-color: var(--gold); }
   .epi-panels { max-width: 640px; margin: 0 auto; }
   .tablet {
     display: none;
     background: linear-gradient(180deg, #1a1512, #100c0a);
     border: 1px solid var(--gold-dim);
+    scroll-margin-top: 80px;
     padding: 34px 24px 30px;
     position: relative;
     box-shadow: 0 20px 40px -18px rgba(0,0,0,0.8);
@@ -806,6 +809,15 @@
   var tabsWrap = document.getElementById('epiTabs');
   var panelsWrap = document.getElementById('epiPanels');
 
+  function activateEpilogue(id, tabs, panels, scrollToPanel){
+    var selectedPanel = document.getElementById(id);
+    if (!selectedPanel) return false;
+    tabs.forEach(function(tab){ tab.classList.toggle('active', tab.getAttribute('href') === '#' + id); });
+    panels.forEach(function(panel){ panel.classList.toggle('active', panel.id === id); });
+    if (scrollToPanel) selectedPanel.scrollIntoView();
+    return true;
+  }
+
   fetch('epilogues.json')
     .then(function(res){
       if (!res.ok) throw new Error('HTTP ' + res.status);
@@ -813,14 +825,18 @@
     })
     .then(function(epilogues){
       epilogues.forEach(function(ep, i){
-        var tab = document.createElement('button');
+        var id = 'epilogue-' + ep.name.toLowerCase()
+          .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+          .replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+        var tab = document.createElement('a');
         tab.className = 'epi-tab' + (i === 0 ? ' active' : '');
-        tab.setAttribute('data-epi', i);
+        tab.href = '#' + id;
         tab.textContent = ep.name;
         tabsWrap.appendChild(tab);
 
         var panel = document.createElement('div');
         panel.className = 'tablet' + (ep.land ? ' land' : '') + (i === 0 ? ' active' : '');
+        panel.id = id;
         var html = '<h3>' + ep.name + '</h3>';
         ep.paragraphs.forEach(function(p, pi){
           html += '<p' + (pi > 0 ? ' style="margin-top:14px;"' : '') + '>' + p + '</p>';
@@ -831,15 +847,14 @@
 
       var tabs = tabsWrap.querySelectorAll('.epi-tab');
       var panels = panelsWrap.querySelectorAll('.tablet');
-      tabs.forEach(function(tab){
-        tab.addEventListener('click', function(){
-          var idx = parseInt(tab.getAttribute('data-epi'), 10);
-          tabs.forEach(function(t){ t.classList.remove('active'); });
-          panels.forEach(function(p){ p.classList.remove('active'); });
-          tab.classList.add('active');
-          if (panels[idx]) panels[idx].classList.add('active');
-        });
-      });
+      function activateFromHash(scrollToPanel){
+        var id = window.location.hash.slice(1);
+        if (!activateEpilogue(id, tabs, panels, scrollToPanel) && !id) {
+          activateEpilogue(panels[0].id, tabs, panels, false);
+        }
+      }
+      window.addEventListener('hashchange', function(){ activateFromHash(true); });
+      activateFromHash(Boolean(window.location.hash));
     })
     .catch(function(err){
       console.error('Could not load epilogues.json:', err);
